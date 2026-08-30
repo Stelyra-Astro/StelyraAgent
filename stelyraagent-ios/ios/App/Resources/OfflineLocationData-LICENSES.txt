@@ -1,0 +1,11 @@
+Offline Location Data
+
+GeoNames cities500-2026-07-19
+Copyright GeoNames contributors. Licensed under CC BY 4.0.
+https://www.geonames.org/
+
+Timezone Boundary Builder 2026b-full
+Copyright Timezone Boundary Builder and OpenStreetMap contributors.
+Database output licensed under ODbL 1.0.
+https://github.com/evansiroky/timezone-boundary-builder
+https://www.openstreetmap.org/copyright

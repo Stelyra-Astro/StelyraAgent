@@ -1,0 +1,1654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0594E46A9C5AB4AF222F7517 /* TransitCardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E147416DFCC5ACA352268997 /* TransitCardFactory.swift */; };
+		088932251F598EFFE9611F35 /* CopyCatalog-fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 78DCBC3DA9EE428658861A04 /* CopyCatalog-fr.json */; };
+		0CA9E717FAA930A10FC8F303 /* AgentAccountCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A9E926DF03339C13FA65EA /* AgentAccountCoordinator.swift */; };
+		0DB24641C8BF08236DDFF58D /* SnapshotCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E2F5402DE9F8364545AC92 /* SnapshotCache.swift */; };
+		0EA596C3209C645D2B648C79 /* AgentCapabilityCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8835D9B24A87A51C0A6B48 /* AgentCapabilityCatalog.swift */; };
+		10FA32BA2A42B6FF2E3E9231 /* StelyraAgent.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 83314649B2B88B1EF84102AE /* StelyraAgent.storekit */; };
+		11D7AA5CDE17C9BBFDBE0855 /* AgentConversationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BFF8C2D5CDF8A28EB32E4D /* AgentConversationStore.swift */; };
+		1996A149815F44DF0D3BC7D1 /* WeeklyForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DB115F582BA668C9C65586 /* WeeklyForecast.swift */; };
+		1A5818FB1DAC573E1884E461 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3428E2B533EB80C7A392F57 /* RootView.swift */; };
+		1E5B109E0FC28C9D488026CB /* ChartCardFactoryContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EFB000D256311BC7997AC8 /* ChartCardFactoryContext.swift */; };
+		1EEA3C754E572EFDD24F12FF /* InsightContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F194906655F5BF945DEE846A /* InsightContent.swift */; };
+		1F157001F546FF31A8B6E253 /* ContentKit in Frameworks */ = {isa = PBXBuildFile; productRef = BF115572BAF85750F7889E8A /* ContentKit */; };
+		212B0F86C40966E30C0A9D12 /* abc-life-areas-help-fr.md in Resources */ = {isa = PBXBuildFile; fileRef = 729A89518E9A61003063B272 /* abc-life-areas-help-fr.md */; };
+		215211FB8169E45833049535 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D692423DEAED7149865AB01D /* libsqlite3.tbd */; };
+		21FC521D4CE39B66B6CB88C8 /* agpl-3.0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0D29557C10F39D38D958C241 /* agpl-3.0.txt */; };
+		23AA84D007B6B91CF3D7CD7C /* PrivateContent-ask-en.json in Resources */ = {isa = PBXBuildFile; fileRef = F946CB404F5B195B9F5D996A /* PrivateContent-ask-en.json */; };
+		24E069275BCA45ACC4EC565C /* abc-life-areas-help-it.md in Resources */ = {isa = PBXBuildFile; fileRef = 3B687343C61F02E48D769064 /* abc-life-areas-help-it.md */; };
+		25DFE60ED43F41C377F7B6FA /* VisualRegressionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B55F3D75883BD6DBB666F /* VisualRegressionTests.swift */; };
+		26BDEE9239C6A092DE02835C /* ConsumerCopy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA89BE6F7CBCDEA5BD86F3B /* ConsumerCopy.swift */; };
+		29829F9A7451C26416F8DEC5 /* TransitContentPlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5771B4BD46309EA63B214 /* TransitContentPlannerTests.swift */; };
+		2B299A4893840C8A6FFF190C /* SecondaryChartCardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4130272F8DB22F1A4DF6BAF7 /* SecondaryChartCardFactory.swift */; };
+		2D0B7F3738645AF6F2DDEA08 /* PrivateContent-ask-zh-Hans.json in Resources */ = {isa = PBXBuildFile; fileRef = 6879A2671007A42658985068 /* PrivateContent-ask-zh-Hans.json */; };
+		342AEC05BA3C0424FE467748 /* OfflineLocationData-LICENSES.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1C7DE190E0AA53317F0A1D8F /* OfflineLocationData-LICENSES.txt */; };
+		353FC56DC0F917AF0D070E1D /* OfflineLocationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDCB10E3017BFBF8AACECD1 /* OfflineLocationStore.swift */; };
+		3737F4446C4551C5435CC6AF /* ChartContentPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FE806487446455CC18FAAB /* ChartContentPlan.swift */; };
+		37CA931E332E44FC88932CB8 /* ChartRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA18E9B5EDCDB1D5359356F /* ChartRenderer.swift */; };
+		392B0EFDFEB44916FE735BC0 /* abc-life-areas-help-ko.md in Resources */ = {isa = PBXBuildFile; fileRef = D5D39DD4E4F517AAE4FFCA41 /* abc-life-areas-help-ko.md */; };
+		3BB23BC789814DF2F4E349BA /* AgentStoreKitCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4356EEB81145F00A136F3A8E /* AgentStoreKitCoordinator.swift */; };
+		4066E0AC0A4FC08B3A00C09C /* ChartDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C18FBE7D813C3D541F4C2C7 /* ChartDefinition.swift */; };
+		4085A5CDF5F609835ABD8B9A /* abc-life-areas-help-zh-Hans.md in Resources */ = {isa = PBXBuildFile; fileRef = 230A84E11D69960F195F7566 /* abc-life-areas-help-zh-Hans.md */; };
+		4703A7BEA23E8A8306CC736E /* NatalCardViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9A92A2A75397935CCA3FE0 /* NatalCardViews.swift */; };
+		48019D8FEF915235C1A3656C /* LocationPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5A45B4C42199530E02AC2 /* LocationPicker.swift */; };
+		483E62A7E6D0A2BEF4460297 /* CopyCatalog-zh-Hans.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B8B1F3DE7FD53782D4841F9 /* CopyCatalog-zh-Hans.json */; };
+		4B528C027008FEEDDD302FBC /* AgentAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE29D347C00BD0D8BAF08E6 /* AgentAPIClient.swift */; };
+		4E75660DE4D79DBD4517DDB9 /* SynastryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2124D2A498B5D93481B2C4F /* SynastryView.swift */; };
+		4FB67752E456E39B68509585 /* AppChartCalculationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F053CA29131C56110C311C /* AppChartCalculationService.swift */; };
+		512D311B8C9F63B4761FA458 /* Commerce.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBC54BAE5F4D348C177B1CE /* Commerce.swift */; };
+		53D259AE011E481BD0DA9BFA /* AgentEvidenceBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9706DD54A807694E87803B /* AgentEvidenceBuilder.swift */; };
+		54B7C22CCC1649E060360FBD /* AgentAstrologyToolExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6720C71C21E89A77D8D2E9 /* AgentAstrologyToolExecutor.swift */; };
+		5986A95BBF969C400D20493F /* CurrentSkyCardDraftFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFDE3B8521B1F088DC3BB68 /* CurrentSkyCardDraftFactory.swift */; };
+		5A258FC3BF5530EF822DD4B8 /* AgentAnalysisAssetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67E69618F76883E03DCAD9E /* AgentAnalysisAssetStore.swift */; };
+		5BCA7BF7E79CCA7F8D08C8BB /* AstroTerms-pt-BR.json in Resources */ = {isa = PBXBuildFile; fileRef = 556D2F236DC484D51FFF4629 /* AstroTerms-pt-BR.json */; };
+		5D151D7965A1FAB61B4F7C29 /* LegacyCardFactorySupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FA36735E1B8DEDA70225C0 /* LegacyCardFactorySupport.swift */; };
+		5D199CE3953E142845EE9BC8 /* AgentThemeCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B8ADC875A845A6129E7458 /* AgentThemeCatalog.swift */; };
+		5E445F39FEE6DC571788B533 /* SolarReturnChartCardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D77AE34B6D6C38E7D23D46A /* SolarReturnChartCardFactory.swift */; };
+		5FBDF4AA774026D8AAD5DEBF /* ClassicalTransitThemeMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8D01DB8E014421DC77F010 /* ClassicalTransitThemeMapper.swift */; };
+		61A8BEAA0C1A8E5147D0FE62 /* abc-life-areas-help-de.md in Resources */ = {isa = PBXBuildFile; fileRef = 41A8ADEED45B3FF5E35D51EE /* abc-life-areas-help-de.md */; };
+		623A4F48475077A8E2BEB77F /* CopyCatalogMatcher+Transit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E035E23191E4F81153E165 /* CopyCatalogMatcher+Transit.swift */; };
+		629319102ADE85F4DB146E55 /* InsightCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F3EF7E1CC15884FCED7E75 /* InsightCardView.swift */; };
+		62AB5DE41E859D998230346B /* CopyCatalogMatcher+SolarReturn.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC24C198B4DD7A72A9EF7664 /* CopyCatalogMatcher+SolarReturn.swift */; };
+		63840E900350F7AF3D52BB10 /* NatalChartCardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DBD4175C542DE3EA424556 /* NatalChartCardFactory.swift */; };
+		6541AB20EC974C0B1E3EF39A /* AstroTerms-ko.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C40D3041B64D49D9F3D701C /* AstroTerms-ko.json */; };
+		688AC42A44FF26DFECAE014B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0001748BCA6BDEE40FDAF69F /* Models.swift */; };
+		6C04D754B504A0F0FA2794E9 /* OfflineLocationStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EDBAB229EE7C59FC97A9E0 /* OfflineLocationStoreTests.swift */; };
+		6C7B8020991341A3B4451D6F /* AstroCore in Frameworks */ = {isa = PBXBuildFile; productRef = 30D6CCE5269E50E84B2B7DEC /* AstroCore */; };
+		70132F53C7114EB6D645FA19 /* AstroTerms-zh-Hans.json in Resources */ = {isa = PBXBuildFile; fileRef = E4619F4DE1C22748C0013474 /* AstroTerms-zh-Hans.json */; };
+		713C4568E5C6710FD7783FE8 /* AstroTerms-fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 76FC6D80CFD2C387A3DAB899 /* AstroTerms-fr.json */; };
+		76BF3A7AFEB751101BDC2747 /* LocalizedFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4E905F6183F1B205250DF4 /* LocalizedFormatters.swift */; };
+		7A1BC0CA4E04D5A2309FE860 /* AskHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4337A474AFF019E16E199BE5 /* AskHistory.swift */; };
+		7A3ABD84A28729A3A1E946B8 /* abc-life-areas-help-es.md in Resources */ = {isa = PBXBuildFile; fileRef = ED4C86C13B12F5E36E84D923 /* abc-life-areas-help-es.md */; };
+		7AD25675544934F8242B41EE /* CardContractValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84417FB2E7193D6C0E7A5FCA /* CardContractValidator.swift */; };
+		7B6353AE4436E1F652959DB3 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60ED3443866E30DE17ABB6B2 /* AppModel.swift */; };
+		7BBA3ACFB7519C1F1A6D29A5 /* ClassicalTransitContractValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DB9495F3F054541652CD78 /* ClassicalTransitContractValidator.swift */; };
+		7ECBBCF7318D8C163EE7413B /* InsightCardAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE8C163CA3B99BA7BE5CF41 /* InsightCardAssembler.swift */; };
+		8027E108CC7F87791F0BDE28 /* abc-life-areas-help-pt-BR.md in Resources */ = {isa = PBXBuildFile; fileRef = 90482B2B3A81E4048E1220C9 /* abc-life-areas-help-pt-BR.md */; };
+		8032332A1BD19CCE71D80880 /* SecondaryCardViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6194F5F308EC9A1DF339AD /* SecondaryCardViews.swift */; };
+		80CEA595D7BD506DA9C928DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F7BD56CA4429437CBA73506 /* InfoPlist.strings */; };
+		82597CA6EF95954DF5510308 /* CopyCatalogMatcher+Secondary.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD322493F0275534E07923F /* CopyCatalogMatcher+Secondary.swift */; };
+		875E1728CEBC7D405B611D54 /* CopyCatalogMatcher+Natal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D7232A941738E9FC583C1 /* CopyCatalogMatcher+Natal.swift */; };
+		8911BBB5E2FF479FACB684F9 /* abc-life-areas-help-tr.md in Resources */ = {isa = PBXBuildFile; fileRef = 65FC1D2B90D00C9449A6BDD1 /* abc-life-areas-help-tr.md */; };
+		89CFB438EB29439CFDAD0A90 /* AstroTerms-it.json in Resources */ = {isa = PBXBuildFile; fileRef = 05E012AD938FB8DCC22F2548 /* AstroTerms-it.json */; };
+		8A42B0A24E4CAD8FBA2ED013 /* AgentCredentialStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05B66D4BBB0C947110F4883 /* AgentCredentialStore.swift */; };
+		8AF432FF75CE6DE5E569DBF1 /* TodayEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB2C3D8306425FD5A52E600 /* TodayEngine.swift */; };
+		8BFCDFA1AD31E4334F8D5CFA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD1FAD3202EA2C3A707C3FF /* ProfileView.swift */; };
+		8FBAF6026AE8BF545D5E3582 /* CurrentSkyCardViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC40898363327C83A29878 /* CurrentSkyCardViews.swift */; };
+		8FED1B3E1A9519AD88AE367F /* AgentTechniquePlanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF4D267A84391FB45DAEBB6 /* AgentTechniquePlanner.swift */; };
+		92DCCA5AF567B849437005B6 /* StelyraAgentChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DAF74F47529123E499161A /* StelyraAgentChatView.swift */; };
+		944E82DC06973E07FE796052 /* SolarReturnCardViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299D386EEEB1C3BDF664915E /* SolarReturnCardViews.swift */; };
+		9492E2DFE3C595719585C173 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A958C79AA19EE640E7E93CBB /* TodayView.swift */; };
+		94AD62541BC3576F600D25DD /* AstroTerms-de.json in Resources */ = {isa = PBXBuildFile; fileRef = F4E2A9EB36962A8E85F7D0A8 /* AstroTerms-de.json */; };
+		96640A305092E9A017C73EE4 /* TransitCardContractValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E19D5553D72F8596AD67B0 /* TransitCardContractValidator.swift */; };
+		9ACBC8AE28D03714692CC41B /* StelyraAgentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38198F8887C634E350DF6678 /* StelyraAgentApp.swift */; };
+		9D4B9543E9237D9629D52BFB /* Reports.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3933BD5782B0B139357FBF6 /* Reports.swift */; };
+		9E297DFF84AA927014F6EBAD /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = E66635D61702ADC89B61A78F /* Localizable.xcstrings */; };
+		A002409074280B0E39E5E389 /* SolarReturnCardDraftFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0AA62305ED2BC7D60B8A6D /* SolarReturnCardDraftFactory.swift */; };
+		A07DB941682EAD0CAB62D344 /* StelyraAgentAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C162BF62CFFBA146E72623FD /* StelyraAgentAccountView.swift */; };
+		A4C56501A2A7D45D4E9A403C /* AgentRunCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167F9E71FA9E07BD60B6A164 /* AgentRunCoordinator.swift */; };
+		A4EC9C0219A21C316D2992DF /* InsightVisualRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A442A2A0FEE0721BD47D5411 /* InsightVisualRouter.swift */; };
+		A5118E1E300C68911B1EF8A6 /* AstroCore in Frameworks */ = {isa = PBXBuildFile; productRef = A4AC4A75E749C50EF7AF5CB5 /* AstroCore */; };
+		A624FDECC8D25FDBAC43E31B /* ICloudBackup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAC23390C54DC398590427E /* ICloudBackup.swift */; };
+		A8760695E04473F71BCE6EA3 /* CopyCatalogMatcher+Synastry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB58818C891194223BF1EE37 /* CopyCatalogMatcher+Synastry.swift */; };
+		A917DBAB4C026D80C000704D /* NatalContentPlanning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533CF09A3F2D411E2A606931 /* NatalContentPlanning.swift */; };
+		A92E541411EFDC253DE9639F /* TransitChartCardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7105E5CAA051BD017359C31C /* TransitChartCardFactory.swift */; };
+		A962298905B42098C11E90A0 /* SecondaryCardDraftFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1162CCF2AAD631C45B50E059 /* SecondaryCardDraftFactory.swift */; };
+		AA21C746BC1A72B52800F86C /* InsightFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F0D391825F8C9960072114 /* InsightFactory.swift */; };
+		AB97D70E804D64870DC45A2F /* AstroTerms-es.json in Resources */ = {isa = PBXBuildFile; fileRef = 2970F227C4399F0CAB891719 /* AstroTerms-es.json */; };
+		AD49184C222518AA4EE91A01 /* SynastryChartCardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9934BAD655D669F927F3349 /* SynastryChartCardFactory.swift */; };
+		B12DC8B9B6EE608905157F5F /* ClassicalTransitPlanningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C95DBD83DBDA638B1840FA3 /* ClassicalTransitPlanningTests.swift */; };
+		B1652CF0AA6B42BD10201C02 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 5401CBEB4251BC528BCDE2AD /* PrivacyInfo.xcprivacy */; };
+		B2834A7C3EBAA2078924F4DC /* AppAIReportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EEEA5B855B1E05431323D5 /* AppAIReportService.swift */; };
+		B3145CCFDB26025714B495A4 /* CopyCatalogMatcher+Planned.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E31237F714A8D64153DDE /* CopyCatalogMatcher+Planned.swift */; };
+		B36E665D2F359631081C86FF /* ReportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBE086645940F1DB1B58E7B /* ReportsView.swift */; };
+		B37BDEE51E5B20A046240180 /* TodayDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF165D23E2FE01C4A3872B /* TodayDashboard.swift */; };
+		B5000395C6870C2BDB6000F1 /* ChartEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F29C119E91565C74024D55 /* ChartEvents.swift */; };
+		B83B5DC59CD5C7CEF53A4A03 /* CopyCatalog-en.json in Resources */ = {isa = PBXBuildFile; fileRef = 6C8AA48BEABEFAA3DBB9E640 /* CopyCatalog-en.json */; };
+		B87290A58776DCB6132BD644 /* CommerceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FC42EA1327C58E3790E186 /* CommerceTests.swift */; };
+		B9378E6F9A57CD2B6D8258E0 /* abc-life-areas-help-en.md in Resources */ = {isa = PBXBuildFile; fileRef = DF66BAC6619894188DCC6C3F /* abc-life-areas-help-en.md */; };
+		B93F9B4E8E733AB88789A270 /* AppAdvancedChartCalculationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A6BD75E18DD3D6C049187F /* AppAdvancedChartCalculationService.swift */; };
+		BA7610CF21F7EDEB6E0DAE37 /* ChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE184B904D5F4FC976464EDE /* ChartsView.swift */; };
+		BE4A017B1CDE9F2D6F817F6B /* CurrentSkyChartCardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AFD58DE638A1667CC2544F /* CurrentSkyChartCardFactory.swift */; };
+		BF671541D92DDC95787FCE1E /* ClassicalTransitPlanningStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46A13D53B9693A380B5D9A9 /* ClassicalTransitPlanningStrategy.swift */; };
+		C2302741092C48A9E312EF42 /* TransitCardViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0038F6BC113BBD0A73E9AC /* TransitCardViews.swift */; };
+		C37740DF56D4CC86C40AF837 /* AgentLocalMemoryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE5DF7F277972B55189D081 /* AgentLocalMemoryBuilder.swift */; };
+		C59DD440D475FCB94CA91B46 /* SolarReturnContentPlanning.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD215B116758D7FFFAD2EC2 /* SolarReturnContentPlanning.swift */; };
+		C606D4FA6660607B0E770A5C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 9DB2C40D38C7763F67C253F1 /* LICENSE */; };
+		C784538987A86105AF16ACA7 /* SynastryCardViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3491CE6E878FE454AF7604E5 /* SynastryCardViews.swift */; };
+		C836D6FEC64C3EB9651BBE67 /* CopyCatalogMatcher+CurrentSky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C657D2D2EAE26FD5D4753FB /* CopyCatalogMatcher+CurrentSky.swift */; };
+		C8663CDF5560023DDCC1132F /* CurrentSkyContentPlanning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681C17BC17641732FD2CA752 /* CurrentSkyContentPlanning.swift */; };
+		CAC77F5231EE3117CBD99FE6 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A23EF0542BC7C136BDDCCE8 /* Theme.swift */; };
+		CAE42449B928124F58DB3F6A /* AgentModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F397A2F701B91AAD2C5B57 /* AgentModels.swift */; };
+		CC036DF5B309554D18B2FB3B /* SecondaryContentPlanning.swift in Sources */ = {isa = PBXBuildFile; fileRef = B671605EF659C2E6F1C58361 /* SecondaryContentPlanning.swift */; };
+		CC3CFBB9E9488B5DC4A07F8F /* AstroTerms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239D93518CADFCB362AE3D9A /* AstroTerms.swift */; };
+		CDA310FDDCF794DA5E1FCC8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 949CD5A0E88AA004BCDA8FDF /* Assets.xcassets */; };
+		D02111AC8BC4C4A476A93086 /* SharedCardComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1710685605150B67AE06DFA /* SharedCardComponents.swift */; };
+		D2C9286B1B30E6FDE2D0F63A /* ChartCardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBCE3BEDF9F0312B1325FFB /* ChartCardFactory.swift */; };
+		D49F88C66BB0DA45C850F797 /* PrivateContent-today-en.json in Resources */ = {isa = PBXBuildFile; fileRef = 411709A75C5CD5C2E8FAA3C1 /* PrivateContent-today-en.json */; };
+		D5F037B1235D67418498533D /* SynastryLegacyCardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E324BDBB0C201A489DC49F /* SynastryLegacyCardFactory.swift */; };
+		DC1497E6F39496B6635AF047 /* AppEnrichmentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590090BCC66C310AB2369FB2 /* AppEnrichmentService.swift */; };
+		DCC7B101A5202926B02B619C /* PrivateContent-today-zh-Hans.json in Resources */ = {isa = PBXBuildFile; fileRef = 17D4B7E55E7C89773F39A45F /* PrivateContent-today-zh-Hans.json */; };
+		DCDC3976E9094DF23344CDA6 /* CopyCatalog-es.json in Resources */ = {isa = PBXBuildFile; fileRef = 57253F66209898BF77424C7F /* CopyCatalog-es.json */; };
+		E06D56C894AFD00C58735279 /* AIGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC6E6C8199D495D8F32A029 /* AIGeneration.swift */; };
+		E1BDEADD0AF69F7B77CA52DC /* ephe in Resources */ = {isa = PBXBuildFile; fileRef = BA9FEF51A7EF26A8D656328D /* ephe */; };
+		E770063129D4C1D22EF67439 /* AstroTerms-tr.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D63D49850FE7F2F3E5B69F8 /* AstroTerms-tr.json */; };
+		EAAC4DDF6653D502FC116C31 /* AppRelationshipChartCalculationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0997413FB15A22AFA419D34A /* AppRelationshipChartCalculationService.swift */; };
+		EAFA1962C4D05FF04B58D149 /* AgentChartAssetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC3299215A46AEB3F62DEDE /* AgentChartAssetStore.swift */; };
+		ED0B42E33364327B24FC23D7 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131A4FD561CD3EDA3B3C0569 /* OnboardingView.swift */; };
+		EEA4DD906B14CD83CC7FE050 /* OfflineLocations.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 6C5D0839B2328D97EBE85C77 /* OfflineLocations.sqlite3 */; };
+		F2E39DD46F56B5A874D957D9 /* TransitContentPlanning.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB53429B63692475C46CFDD2 /* TransitContentPlanning.swift */; };
+		F724FA274B3A5DC6E6B52148 /* AgentAssetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1098F308D82871B54CF574 /* AgentAssetsView.swift */; };
+		F82AAAAA92DAEBCA66FA220D /* AdvancedChartCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F39EF9812CE08C0A43A4D0 /* AdvancedChartCache.swift */; };
+		FCBD97C6B2D9B0FBD13D2375 /* PrivateContent in Resources */ = {isa = PBXBuildFile; fileRef = 15984F8719A4FCE9C89BD385 /* PrivateContent */; };
+		FD336315A4EC893FD54FCD48 /* AdvancedChartModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFD19C3EBE803485ED4A45 /* AdvancedChartModels.swift */; };
+		FE355D4D6B558777BEF1818F /* NatalCardDraftFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1404D7733F82FEA797E1AC /* NatalCardDraftFactory.swift */; };
+		FE9506F56A0674C36626E2A7 /* InterpretationContextFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0329F58DAD16E8E3D914A0C8 /* InterpretationContextFactory.swift */; };
+		FFC80AD6BB300576410E1396 /* AstroTerms-en.json in Resources */ = {isa = PBXBuildFile; fileRef = E88B2CC98847F56BC25D1E56 /* AstroTerms-en.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18B9C6E8B9864BF0F9B9AB8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E62CF0027BEE603414E932A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A55AB525B3E4C0F2D11FA874;
+			remoteInfo = StelyraAgent;
+		};
+		A897AFE42793A1BAAC52657D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E62CF0027BEE603414E932A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A55AB525B3E4C0F2D11FA874;
+			remoteInfo = StelyraAgent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0001748BCA6BDEE40FDAF69F /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		01CA427CAD3C6DC09E1E0978 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		02DAF74F47529123E499161A /* StelyraAgentChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StelyraAgentChatView.swift; sourceTree = "<group>"; };
+		0329F58DAD16E8E3D914A0C8 /* InterpretationContextFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpretationContextFactory.swift; sourceTree = "<group>"; };
+		05E012AD938FB8DCC22F2548 /* AstroTerms-it.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "AstroTerms-it.json"; sourceTree = "<group>"; };
+		06F39EF9812CE08C0A43A4D0 /* AdvancedChartCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedChartCache.swift; sourceTree = "<group>"; };
+		06FC42EA1327C58E3790E186 /* CommerceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommerceTests.swift; sourceTree = "<group>"; };
+		098015EBE7858DAABAB90480 /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
+		0997413FB15A22AFA419D34A /* AppRelationshipChartCalculationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRelationshipChartCalculationService.swift; sourceTree = "<group>"; };
+		0AA89BE6F7CBCDEA5BD86F3B /* ConsumerCopy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumerCopy.swift; sourceTree = "<group>"; };
+		0B5DBDE270D59F189AA29629 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0C95DBD83DBDA638B1840FA3 /* ClassicalTransitPlanningTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicalTransitPlanningTests.swift; sourceTree = "<group>"; };
+		0D29557C10F39D38D958C241 /* agpl-3.0.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "agpl-3.0.txt"; sourceTree = "<group>"; };
+		0E4E905F6183F1B205250DF4 /* LocalizedFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedFormatters.swift; sourceTree = "<group>"; };
+		0E8D01DB8E014421DC77F010 /* ClassicalTransitThemeMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicalTransitThemeMapper.swift; sourceTree = "<group>"; };
+		10A70A2B8A2F1CA45FD4F088 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		1162CCF2AAD631C45B50E059 /* SecondaryCardDraftFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryCardDraftFactory.swift; sourceTree = "<group>"; };
+		131A4FD561CD3EDA3B3C0569 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		15984F8719A4FCE9C89BD385 /* PrivateContent */ = {isa = PBXFileReference; lastKnownFileType = folder; name = PrivateContent; path = App/Resources/PrivateContent; sourceTree = SOURCE_ROOT; };
+		167F9E71FA9E07BD60B6A164 /* AgentRunCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentRunCoordinator.swift; sourceTree = "<group>"; };
+		16DBD4175C542DE3EA424556 /* NatalChartCardFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatalChartCardFactory.swift; sourceTree = "<group>"; };
+		17D4B7E55E7C89773F39A45F /* PrivateContent-today-zh-Hans.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "PrivateContent-today-zh-Hans.json"; sourceTree = "<group>"; };
+		1C7DE190E0AA53317F0A1D8F /* OfflineLocationData-LICENSES.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "OfflineLocationData-LICENSES.txt"; sourceTree = "<group>"; };
+		1DBCE3BEDF9F0312B1325FFB /* ChartCardFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartCardFactory.swift; sourceTree = "<group>"; };
+		1E0AA62305ED2BC7D60B8A6D /* SolarReturnCardDraftFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarReturnCardDraftFactory.swift; sourceTree = "<group>"; };
+		21F397A2F701B91AAD2C5B57 /* AgentModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentModels.swift; sourceTree = "<group>"; };
+		230A84E11D69960F195F7566 /* abc-life-areas-help-zh-Hans.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "abc-life-areas-help-zh-Hans.md"; sourceTree = "<group>"; };
+		239D93518CADFCB362AE3D9A /* AstroTerms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroTerms.swift; sourceTree = "<group>"; };
+		23E19D5553D72F8596AD67B0 /* TransitCardContractValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitCardContractValidator.swift; sourceTree = "<group>"; };
+		25F3EF7E1CC15884FCED7E75 /* InsightCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightCardView.swift; sourceTree = "<group>"; };
+		26F053CA29131C56110C311C /* AppChartCalculationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppChartCalculationService.swift; sourceTree = "<group>"; };
+		27A723CCB42C163C2CBA9480 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		28FFD19C3EBE803485ED4A45 /* AdvancedChartModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedChartModels.swift; sourceTree = "<group>"; };
+		2970F227C4399F0CAB891719 /* AstroTerms-es.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "AstroTerms-es.json"; sourceTree = "<group>"; };
+		299D386EEEB1C3BDF664915E /* SolarReturnCardViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarReturnCardViews.swift; sourceTree = "<group>"; };
+		2B0038F6BC113BBD0A73E9AC /* TransitCardViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitCardViews.swift; sourceTree = "<group>"; };
+		2C40D3041B64D49D9F3D701C /* AstroTerms-ko.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "AstroTerms-ko.json"; sourceTree = "<group>"; };
+		2CCC40898363327C83A29878 /* CurrentSkyCardViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentSkyCardViews.swift; sourceTree = "<group>"; };
+		2E1404D7733F82FEA797E1AC /* NatalCardDraftFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatalCardDraftFactory.swift; sourceTree = "<group>"; };
+		32243AD0905B50E9122DB447 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		33EEEA5B855B1E05431323D5 /* AppAIReportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAIReportService.swift; sourceTree = "<group>"; };
+		3491CE6E878FE454AF7604E5 /* SynastryCardViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynastryCardViews.swift; sourceTree = "<group>"; };
+		35F0D391825F8C9960072114 /* InsightFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightFactory.swift; sourceTree = "<group>"; };
+		36BFF8C2D5CDF8A28EB32E4D /* AgentConversationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentConversationStore.swift; sourceTree = "<group>"; };
+		38198F8887C634E350DF6678 /* StelyraAgentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StelyraAgentApp.swift; sourceTree = "<group>"; };
+		3B687343C61F02E48D769064 /* abc-life-areas-help-it.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "abc-life-areas-help-it.md"; sourceTree = "<group>"; };
+		3BAC23390C54DC398590427E /* ICloudBackup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICloudBackup.swift; sourceTree = "<group>"; };
+		3BE8C163CA3B99BA7BE5CF41 /* InsightCardAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightCardAssembler.swift; sourceTree = "<group>"; };
+		3CB2C3D8306425FD5A52E600 /* TodayEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayEngine.swift; sourceTree = "<group>"; };
+		3EF883C9CC14FA1BCC5D94B9 /* StelyraAgentTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = StelyraAgentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		411709A75C5CD5C2E8FAA3C1 /* PrivateContent-today-en.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "PrivateContent-today-en.json"; sourceTree = "<group>"; };
+		4130272F8DB22F1A4DF6BAF7 /* SecondaryChartCardFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryChartCardFactory.swift; sourceTree = "<group>"; };
+		41A8ADEED45B3FF5E35D51EE /* abc-life-areas-help-de.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "abc-life-areas-help-de.md"; sourceTree = "<group>"; };
+		41DB115F582BA668C9C65586 /* WeeklyForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyForecast.swift; sourceTree = "<group>"; };
+		4337A474AFF019E16E199BE5 /* AskHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskHistory.swift; sourceTree = "<group>"; };
+		4356EEB81145F00A136F3A8E /* AgentStoreKitCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentStoreKitCoordinator.swift; sourceTree = "<group>"; };
+		49E035E23191E4F81153E165 /* CopyCatalogMatcher+Transit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CopyCatalogMatcher+Transit.swift"; sourceTree = "<group>"; };
+		4CDCB10E3017BFBF8AACECD1 /* OfflineLocationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineLocationStore.swift; sourceTree = "<group>"; };
+		4EBE086645940F1DB1B58E7B /* ReportsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsView.swift; sourceTree = "<group>"; };
+		533CF09A3F2D411E2A606931 /* NatalContentPlanning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatalContentPlanning.swift; sourceTree = "<group>"; };
+		5401CBEB4251BC528BCDE2AD /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		540D688F6D18FF4FC7222028 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		54E324BDBB0C201A489DC49F /* SynastryLegacyCardFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynastryLegacyCardFactory.swift; sourceTree = "<group>"; };
+		556D2F236DC484D51FFF4629 /* AstroTerms-pt-BR.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "AstroTerms-pt-BR.json"; sourceTree = "<group>"; };
+		57253F66209898BF77424C7F /* CopyCatalog-es.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "CopyCatalog-es.json"; sourceTree = "<group>"; };
+		590090BCC66C310AB2369FB2 /* AppEnrichmentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnrichmentService.swift; sourceTree = "<group>"; };
+		59F29C119E91565C74024D55 /* ChartEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartEvents.swift; sourceTree = "<group>"; };
+		5A23EF0542BC7C136BDDCCE8 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		5A6720C71C21E89A77D8D2E9 /* AgentAstrologyToolExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentAstrologyToolExecutor.swift; sourceTree = "<group>"; };
+		5CFDE3B8521B1F088DC3BB68 /* CurrentSkyCardDraftFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentSkyCardDraftFactory.swift; sourceTree = "<group>"; };
+		60ED3443866E30DE17ABB6B2 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		64E5771B4BD46309EA63B214 /* TransitContentPlannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitContentPlannerTests.swift; sourceTree = "<group>"; };
+		65FC1D2B90D00C9449A6BDD1 /* abc-life-areas-help-tr.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "abc-life-areas-help-tr.md"; sourceTree = "<group>"; };
+		66DB9495F3F054541652CD78 /* ClassicalTransitContractValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicalTransitContractValidator.swift; sourceTree = "<group>"; };
+		67FE806487446455CC18FAAB /* ChartContentPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartContentPlan.swift; sourceTree = "<group>"; };
+		681C17BC17641732FD2CA752 /* CurrentSkyContentPlanning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentSkyContentPlanning.swift; sourceTree = "<group>"; };
+		6879A2671007A42658985068 /* PrivateContent-ask-zh-Hans.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "PrivateContent-ask-zh-Hans.json"; sourceTree = "<group>"; };
+		6C5D0839B2328D97EBE85C77 /* OfflineLocations.sqlite3 */ = {isa = PBXFileReference; path = OfflineLocations.sqlite3; sourceTree = "<group>"; };
+		6C6194F5F308EC9A1DF339AD /* SecondaryCardViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryCardViews.swift; sourceTree = "<group>"; };
+		6C8AA48BEABEFAA3DBB9E640 /* CopyCatalog-en.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "CopyCatalog-en.json"; sourceTree = "<group>"; };
+		7105E5CAA051BD017359C31C /* TransitChartCardFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitChartCardFactory.swift; sourceTree = "<group>"; };
+		729A89518E9A61003063B272 /* abc-life-areas-help-fr.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "abc-life-areas-help-fr.md"; sourceTree = "<group>"; };
+		76EFB000D256311BC7997AC8 /* ChartCardFactoryContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartCardFactoryContext.swift; sourceTree = "<group>"; };
+		76FC6D80CFD2C387A3DAB899 /* AstroTerms-fr.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "AstroTerms-fr.json"; sourceTree = "<group>"; };
+		78DCBC3DA9EE428658861A04 /* CopyCatalog-fr.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "CopyCatalog-fr.json"; sourceTree = "<group>"; };
+		78EDBAB229EE7C59FC97A9E0 /* OfflineLocationStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineLocationStoreTests.swift; sourceTree = "<group>"; };
+		7C657D2D2EAE26FD5D4753FB /* CopyCatalogMatcher+CurrentSky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CopyCatalogMatcher+CurrentSky.swift"; sourceTree = "<group>"; };
+		7EC3299215A46AEB3F62DEDE /* AgentChartAssetStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentChartAssetStore.swift; sourceTree = "<group>"; };
+		83314649B2B88B1EF84102AE /* StelyraAgent.storekit */ = {isa = PBXFileReference; path = StelyraAgent.storekit; sourceTree = "<group>"; };
+		840B55F3D75883BD6DBB666F /* VisualRegressionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualRegressionTests.swift; sourceTree = "<group>"; };
+		84417FB2E7193D6C0E7A5FCA /* CardContractValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardContractValidator.swift; sourceTree = "<group>"; };
+		85ACBB139A6AEAF46A45C727 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8A9706DD54A807694E87803B /* AgentEvidenceBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentEvidenceBuilder.swift; sourceTree = "<group>"; };
+		8A9BA65506EC06A834402887 /* StelyraAgent.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = StelyraAgent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B8B1F3DE7FD53782D4841F9 /* CopyCatalog-zh-Hans.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "CopyCatalog-zh-Hans.json"; sourceTree = "<group>"; };
+		8D3D7232A941738E9FC583C1 /* CopyCatalogMatcher+Natal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CopyCatalogMatcher+Natal.swift"; sourceTree = "<group>"; };
+		8E74A8A5FB74AB5EA593AD29 /* AstroCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AstroCore; path = Packages/AstroCore; sourceTree = SOURCE_ROOT; };
+		90482B2B3A81E4048E1220C9 /* abc-life-areas-help-pt-BR.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "abc-life-areas-help-pt-BR.md"; sourceTree = "<group>"; };
+		90AC86B3264493E30DD3807D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		949CD5A0E88AA004BCDA8FDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95A9E926DF03339C13FA65EA /* AgentAccountCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentAccountCoordinator.swift; sourceTree = "<group>"; };
+		95AFD58DE638A1667CC2544F /* CurrentSkyChartCardFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentSkyChartCardFactory.swift; sourceTree = "<group>"; };
+		98A6BD75E18DD3D6C049187F /* AppAdvancedChartCalculationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAdvancedChartCalculationService.swift; sourceTree = "<group>"; };
+		9C1098F308D82871B54CF574 /* AgentAssetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentAssetsView.swift; sourceTree = "<group>"; };
+		9C18FBE7D813C3D541F4C2C7 /* ChartDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDefinition.swift; sourceTree = "<group>"; };
+		9D63D49850FE7F2F3E5B69F8 /* AstroTerms-tr.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "AstroTerms-tr.json"; sourceTree = "<group>"; };
+		9D77AE34B6D6C38E7D23D46A /* SolarReturnChartCardFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarReturnChartCardFactory.swift; sourceTree = "<group>"; };
+		9DB2C40D38C7763F67C253F1 /* LICENSE */ = {isa = PBXFileReference; path = LICENSE; sourceTree = "<group>"; };
+		A12B9EF7A34575BACF140076 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1710685605150B67AE06DFA /* SharedCardComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedCardComponents.swift; sourceTree = "<group>"; };
+		A442A2A0FEE0721BD47D5411 /* InsightVisualRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightVisualRouter.swift; sourceTree = "<group>"; };
+		A958C79AA19EE640E7E93CBB /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		AB58818C891194223BF1EE37 /* CopyCatalogMatcher+Synastry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CopyCatalogMatcher+Synastry.swift"; sourceTree = "<group>"; };
+		ADD322493F0275534E07923F /* CopyCatalogMatcher+Secondary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CopyCatalogMatcher+Secondary.swift"; sourceTree = "<group>"; };
+		B46A13D53B9693A380B5D9A9 /* ClassicalTransitPlanningStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicalTransitPlanningStrategy.swift; sourceTree = "<group>"; };
+		B671605EF659C2E6F1C58361 /* SecondaryContentPlanning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryContentPlanning.swift; sourceTree = "<group>"; };
+		B9934BAD655D669F927F3349 /* SynastryChartCardFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynastryChartCardFactory.swift; sourceTree = "<group>"; };
+		BA9FEF51A7EF26A8D656328D /* ephe */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ephe; path = ../vendor/swisseph/ephe; sourceTree = SOURCE_ROOT; };
+		BDD1FAD3202EA2C3A707C3FF /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		BDD215B116758D7FFFAD2EC2 /* SolarReturnContentPlanning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarReturnContentPlanning.swift; sourceTree = "<group>"; };
+		C05B66D4BBB0C947110F4883 /* AgentCredentialStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentCredentialStore.swift; sourceTree = "<group>"; };
+		C162BF62CFFBA146E72623FD /* StelyraAgentAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StelyraAgentAccountView.swift; sourceTree = "<group>"; };
+		C1B8ADC875A845A6129E7458 /* AgentThemeCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentThemeCatalog.swift; sourceTree = "<group>"; };
+		C9CC6F38414A02A004254529 /* StelyraAgent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StelyraAgent.entitlements; sourceTree = "<group>"; };
+		C9FA36735E1B8DEDA70225C0 /* LegacyCardFactorySupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyCardFactorySupport.swift; sourceTree = "<group>"; };
+		CB53429B63692475C46CFDD2 /* TransitContentPlanning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitContentPlanning.swift; sourceTree = "<group>"; };
+		CB9A92A2A75397935CCA3FE0 /* NatalCardViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatalCardViews.swift; sourceTree = "<group>"; };
+		CBE29D347C00BD0D8BAF08E6 /* AgentAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentAPIClient.swift; sourceTree = "<group>"; };
+		CCE5DF7F277972B55189D081 /* AgentLocalMemoryBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentLocalMemoryBuilder.swift; sourceTree = "<group>"; };
+		CFA18E9B5EDCDB1D5359356F /* ChartRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartRenderer.swift; sourceTree = "<group>"; };
+		D3428E2B533EB80C7A392F57 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		D3933BD5782B0B139357FBF6 /* Reports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reports.swift; sourceTree = "<group>"; };
+		D4E2F5402DE9F8364545AC92 /* SnapshotCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotCache.swift; sourceTree = "<group>"; };
+		D5D39DD4E4F517AAE4FFCA41 /* abc-life-areas-help-ko.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "abc-life-areas-help-ko.md"; sourceTree = "<group>"; };
+		D692423DEAED7149865AB01D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		DACF165D23E2FE01C4A3872B /* TodayDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayDashboard.swift; sourceTree = "<group>"; };
+		DD7E31237F714A8D64153DDE /* CopyCatalogMatcher+Planned.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CopyCatalogMatcher+Planned.swift"; sourceTree = "<group>"; };
+		DEBC54BAE5F4D348C177B1CE /* Commerce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commerce.swift; sourceTree = "<group>"; };
+		DEE5A45B4C42199530E02AC2 /* LocationPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPicker.swift; sourceTree = "<group>"; };
+		DF66BAC6619894188DCC6C3F /* abc-life-areas-help-en.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "abc-life-areas-help-en.md"; sourceTree = "<group>"; };
+		E147416DFCC5ACA352268997 /* TransitCardFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitCardFactory.swift; sourceTree = "<group>"; };
+		E4619F4DE1C22748C0013474 /* AstroTerms-zh-Hans.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "AstroTerms-zh-Hans.json"; sourceTree = "<group>"; };
+		E66635D61702ADC89B61A78F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		E67E69618F76883E03DCAD9E /* AgentAnalysisAssetStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentAnalysisAssetStore.swift; sourceTree = "<group>"; };
+		E88B2CC98847F56BC25D1E56 /* AstroTerms-en.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "AstroTerms-en.json"; sourceTree = "<group>"; };
+		EC24C198B4DD7A72A9EF7664 /* CopyCatalogMatcher+SolarReturn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CopyCatalogMatcher+SolarReturn.swift"; sourceTree = "<group>"; };
+		ED4C86C13B12F5E36E84D923 /* abc-life-areas-help-es.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "abc-life-areas-help-es.md"; sourceTree = "<group>"; };
+		EF8835D9B24A87A51C0A6B48 /* AgentCapabilityCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentCapabilityCatalog.swift; sourceTree = "<group>"; };
+		F194906655F5BF945DEE846A /* InsightContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightContent.swift; sourceTree = "<group>"; };
+		F2124D2A498B5D93481B2C4F /* SynastryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynastryView.swift; sourceTree = "<group>"; };
+		F25CBB1A0D75F8305390186F /* StelyraAgentUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = StelyraAgentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2E03E29DC8872842157AB88 /* ContentKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ContentKit; path = Packages/ContentKit; sourceTree = SOURCE_ROOT; };
+		F4E2A9EB36962A8E85F7D0A8 /* AstroTerms-de.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "AstroTerms-de.json"; sourceTree = "<group>"; };
+		F946CB404F5B195B9F5D996A /* PrivateContent-ask-en.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "PrivateContent-ask-en.json"; sourceTree = "<group>"; };
+		FDC6E6C8199D495D8F32A029 /* AIGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIGeneration.swift; sourceTree = "<group>"; };
+		FE184B904D5F4FC976464EDE /* ChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsView.swift; sourceTree = "<group>"; };
+		FFF4D267A84391FB45DAEBB6 /* AgentTechniquePlanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentTechniquePlanner.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F86223A58148A2B654D2220 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5118E1E300C68911B1EF8A6 /* AstroCore in Frameworks */,
+				1F157001F546FF31A8B6E253 /* ContentKit in Frameworks */,
+				215211FB8169E45833049535 /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B258D869EF1DE150B29E2135 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C7B8020991341A3B4451D6F /* AstroCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0168559CF6003E256F5D3482 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				35F0D391825F8C9960072114 /* InsightFactory.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		167E89A777357E8B5ED11B95 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2CCC40898363327C83A29878 /* CurrentSkyCardViews.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		17A0E560AD60DF972EBB4019 /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				84417FB2E7193D6C0E7A5FCA /* CardContractValidator.swift */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
+		1809D3EAD9F6A3EFB7044627 /* stelyraagent-ios */ = {
+			isa = PBXGroup;
+			children = (
+				6EC0706E37800CC4095877C7 /* vendor */,
+			);
+			name = "stelyraagent-ios";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		21456C133B0FEAFED8DAF15B /* Copy */ = {
+			isa = PBXGroup;
+			children = (
+				ADD322493F0275534E07923F /* CopyCatalogMatcher+Secondary.swift */,
+			);
+			path = Copy;
+			sourceTree = "<group>";
+		};
+		21ACB905011B74B694910B97 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				B9934BAD655D669F927F3349 /* SynastryChartCardFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		21EAC4F18356E4FD1B24BB69 /* Copy */ = {
+			isa = PBXGroup;
+			children = (
+				8D3D7232A941738E9FC583C1 /* CopyCatalogMatcher+Natal.swift */,
+			);
+			path = Copy;
+			sourceTree = "<group>";
+		};
+		2A3B3DB669ECED42CFCC4B59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A9BA65506EC06A834402887 /* StelyraAgent.app */,
+				3EF883C9CC14FA1BCC5D94B9 /* StelyraAgentTests.xctest */,
+				F25CBB1A0D75F8305390186F /* StelyraAgentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		398D22B8136BF01E5AFF6362 /* Planning */ = {
+			isa = PBXGroup;
+			children = (
+				681C17BC17641732FD2CA752 /* CurrentSkyContentPlanning.swift */,
+			);
+			path = Planning;
+			sourceTree = "<group>";
+		};
+		3A79BB23192AE8DEFDDD27C8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				299D386EEEB1C3BDF664915E /* SolarReturnCardViews.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4024304E8DE737E6DEDC09E5 /* CurrentSky */ = {
+			isa = PBXGroup;
+			children = (
+				47DAD8688AC100C7D2D71A30 /* Copy */,
+				C468C76E8053C49FE73AB7FB /* Factory */,
+				398D22B8136BF01E5AFF6362 /* Planning */,
+				167E89A777357E8B5ED11B95 /* UI */,
+			);
+			path = CurrentSky;
+			sourceTree = "<group>";
+		};
+		41DED9A38B08755851DEB5B2 /* PrivateContent */ = {
+			isa = PBXGroup;
+			children = (
+				098015EBE7858DAABAB90480 /* .gitkeep */,
+				6C8AA48BEABEFAA3DBB9E640 /* CopyCatalog-en.json */,
+				57253F66209898BF77424C7F /* CopyCatalog-es.json */,
+				78DCBC3DA9EE428658861A04 /* CopyCatalog-fr.json */,
+				8B8B1F3DE7FD53782D4841F9 /* CopyCatalog-zh-Hans.json */,
+				F946CB404F5B195B9F5D996A /* PrivateContent-ask-en.json */,
+				6879A2671007A42658985068 /* PrivateContent-ask-zh-Hans.json */,
+				411709A75C5CD5C2E8FAA3C1 /* PrivateContent-today-en.json */,
+				17D4B7E55E7C89773F39A45F /* PrivateContent-today-zh-Hans.json */,
+			);
+			path = PrivateContent;
+			sourceTree = "<group>";
+		};
+		43A4F762FED9BF0DF0006381 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F4E2A9EB36962A8E85F7D0A8 /* AstroTerms-de.json */,
+				E88B2CC98847F56BC25D1E56 /* AstroTerms-en.json */,
+				2970F227C4399F0CAB891719 /* AstroTerms-es.json */,
+				76FC6D80CFD2C387A3DAB899 /* AstroTerms-fr.json */,
+				05E012AD938FB8DCC22F2548 /* AstroTerms-it.json */,
+				2C40D3041B64D49D9F3D701C /* AstroTerms-ko.json */,
+				556D2F236DC484D51FFF4629 /* AstroTerms-pt-BR.json */,
+				9D63D49850FE7F2F3E5B69F8 /* AstroTerms-tr.json */,
+				E4619F4DE1C22748C0013474 /* AstroTerms-zh-Hans.json */,
+				1C7DE190E0AA53317F0A1D8F /* OfflineLocationData-LICENSES.txt */,
+				6C5D0839B2328D97EBE85C77 /* OfflineLocations.sqlite3 */,
+				15984F8719A4FCE9C89BD385 /* PrivateContent */,
+				9CC922728A0CBF455E96E6C3 /* Help */,
+				41DED9A38B08755851DEB5B2 /* PrivateContent */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		455BCAC439A5DD7B0F4B1C8F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4DA6ADF9CD317EE0F5977692 /* Copy */,
+				C9AF02DAA69D4D7B10AB2AF3 /* Factory */,
+				94891574189D5ACC3DB56402 /* Planning */,
+				0168559CF6003E256F5D3482 /* Routing */,
+				BC87ADA23650DE88DB4E4897 /* UI */,
+				17A0E560AD60DF972EBB4019 /* Validation */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		46ADC8D267DA434482DC93EB /* Copy */ = {
+			isa = PBXGroup;
+			children = (
+				EC24C198B4DD7A72A9EF7664 /* CopyCatalogMatcher+SolarReturn.swift */,
+			);
+			path = Copy;
+			sourceTree = "<group>";
+		};
+		47DAD8688AC100C7D2D71A30 /* Copy */ = {
+			isa = PBXGroup;
+			children = (
+				7C657D2D2EAE26FD5D4753FB /* CopyCatalogMatcher+CurrentSky.swift */,
+			);
+			path = Copy;
+			sourceTree = "<group>";
+		};
+		4DA6ADF9CD317EE0F5977692 /* Copy */ = {
+			isa = PBXGroup;
+			children = (
+				DD7E31237F714A8D64153DDE /* CopyCatalogMatcher+Planned.swift */,
+			);
+			path = Copy;
+			sourceTree = "<group>";
+		};
+		509E4F80D97BC01E4E68BAC6 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0C95DBD83DBDA638B1840FA3 /* ClassicalTransitPlanningTests.swift */,
+				06FC42EA1327C58E3790E186 /* CommerceTests.swift */,
+				78EDBAB229EE7C59FC97A9E0 /* OfflineLocationStoreTests.swift */,
+				64E5771B4BD46309EA63B214 /* TransitContentPlannerTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		50E9841681D24724963D008E /* Transit */ = {
+			isa = PBXGroup;
+			children = (
+				FF407545BE27EFC4CFBD4173 /* Copy */,
+				96176ADE1311533E73280B78 /* Factory */,
+				FF551DD6B18AB1670614B511 /* Planning */,
+				FEE21C93456E9E7CAA80A3D2 /* UI */,
+				F0608C8778CA79DC3167BC8A /* Validation */,
+			);
+			path = Transit;
+			sourceTree = "<group>";
+		};
+		528E522101C2BF7DE054AD59 /* AstroCore */ = {
+			isa = PBXGroup;
+			children = (
+				CBBFAE3387F99949E3B025B2 /* Sources */,
+			);
+			path = AstroCore;
+			sourceTree = "<group>";
+		};
+		54D7AE82CC96C801528C0848 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				1162CCF2AAD631C45B50E059 /* SecondaryCardDraftFactory.swift */,
+				4130272F8DB22F1A4DF6BAF7 /* SecondaryChartCardFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		60010E167A302CF3493A6E1B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CB9A92A2A75397935CCA3FE0 /* NatalCardViews.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6EC0706E37800CC4095877C7 /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				8FE2765BFF0B503F42219700 /* swisseph */,
+			);
+			path = vendor;
+			sourceTree = "<group>";
+		};
+		7416D8405206274D233F4BFA /* Natal */ = {
+			isa = PBXGroup;
+			children = (
+				21EAC4F18356E4FD1B24BB69 /* Copy */,
+				FC528737AE44CDC4A0CBB089 /* Factory */,
+				C05C0148D76367BA614419F7 /* Planning */,
+				60010E167A302CF3493A6E1B /* UI */,
+			);
+			path = Natal;
+			sourceTree = "<group>";
+		};
+		7AD7FF6431EAA6F85B43D7C3 /* CSwissEphemeris */ = {
+			isa = PBXGroup;
+			children = (
+				0D29557C10F39D38D958C241 /* agpl-3.0.txt */,
+				9DB2C40D38C7763F67C253F1 /* LICENSE */,
+			);
+			path = CSwissEphemeris;
+			sourceTree = "<group>";
+		};
+		7B61FDC1B740671F71ED7061 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				840B55F3D75883BD6DBB666F /* VisualRegressionTests.swift */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		839D5115E0CA29469FAE008E /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				1E0AA62305ED2BC7D60B8A6D /* SolarReturnCardDraftFactory.swift */,
+				9D77AE34B6D6C38E7D23D46A /* SolarReturnChartCardFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		86794A7D36CE7FA80E95F693 /* Synastry */ = {
+			isa = PBXGroup;
+			children = (
+				F2B4D30BAB3C2E8B261FDBFF /* Copy */,
+				21ACB905011B74B694910B97 /* Factory */,
+				99F6965028F293AAD2F055CE /* Legacy */,
+				E58ED14A690BEFE4B8AFF945 /* UI */,
+			);
+			path = Synastry;
+			sourceTree = "<group>";
+		};
+		8CB88DFC01D5D7F4B025E003 /* Agent */ = {
+			isa = PBXGroup;
+			children = (
+				95A9E926DF03339C13FA65EA /* AgentAccountCoordinator.swift */,
+				E67E69618F76883E03DCAD9E /* AgentAnalysisAssetStore.swift */,
+				CBE29D347C00BD0D8BAF08E6 /* AgentAPIClient.swift */,
+				9C1098F308D82871B54CF574 /* AgentAssetsView.swift */,
+				5A6720C71C21E89A77D8D2E9 /* AgentAstrologyToolExecutor.swift */,
+				EF8835D9B24A87A51C0A6B48 /* AgentCapabilityCatalog.swift */,
+				7EC3299215A46AEB3F62DEDE /* AgentChartAssetStore.swift */,
+				36BFF8C2D5CDF8A28EB32E4D /* AgentConversationStore.swift */,
+				C05B66D4BBB0C947110F4883 /* AgentCredentialStore.swift */,
+				8A9706DD54A807694E87803B /* AgentEvidenceBuilder.swift */,
+				CCE5DF7F277972B55189D081 /* AgentLocalMemoryBuilder.swift */,
+				21F397A2F701B91AAD2C5B57 /* AgentModels.swift */,
+				167F9E71FA9E07BD60B6A164 /* AgentRunCoordinator.swift */,
+				4356EEB81145F00A136F3A8E /* AgentStoreKitCoordinator.swift */,
+				FFF4D267A84391FB45DAEBB6 /* AgentTechniquePlanner.swift */,
+				C1B8ADC875A845A6129E7458 /* AgentThemeCatalog.swift */,
+				C162BF62CFFBA146E72623FD /* StelyraAgentAccountView.swift */,
+				02DAF74F47529123E499161A /* StelyraAgentChatView.swift */,
+			);
+			path = Agent;
+			sourceTree = "<group>";
+		};
+		8FE2765BFF0B503F42219700 /* swisseph */ = {
+			isa = PBXGroup;
+			children = (
+				BA9FEF51A7EF26A8D656328D /* ephe */,
+			);
+			path = swisseph;
+			sourceTree = "<group>";
+		};
+		94891574189D5ACC3DB56402 /* Planning */ = {
+			isa = PBXGroup;
+			children = (
+				67FE806487446455CC18FAAB /* ChartContentPlan.swift */,
+			);
+			path = Planning;
+			sourceTree = "<group>";
+		};
+		96176ADE1311533E73280B78 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				E147416DFCC5ACA352268997 /* TransitCardFactory.swift */,
+				7105E5CAA051BD017359C31C /* TransitChartCardFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		973C1DAF4B747E8C0377C87D /* SolarReturn */ = {
+			isa = PBXGroup;
+			children = (
+				46ADC8D267DA434482DC93EB /* Copy */,
+				839D5115E0CA29469FAE008E /* Factory */,
+				D2B399EC18CBCF362CF5AE8B /* Planning */,
+				3A79BB23192AE8DEFDDD27C8 /* UI */,
+			);
+			path = SolarReturn;
+			sourceTree = "<group>";
+		};
+		99F6965028F293AAD2F055CE /* Legacy */ = {
+			isa = PBXGroup;
+			children = (
+				54E324BDBB0C201A489DC49F /* SynastryLegacyCardFactory.swift */,
+			);
+			path = Legacy;
+			sourceTree = "<group>";
+		};
+		9C640CB09865D0B3BAC6BD2A /* Planning */ = {
+			isa = PBXGroup;
+			children = (
+				B671605EF659C2E6F1C58361 /* SecondaryContentPlanning.swift */,
+			);
+			path = Planning;
+			sourceTree = "<group>";
+		};
+		9C95F1937410CFFEE7219F4E /* Secondary */ = {
+			isa = PBXGroup;
+			children = (
+				21456C133B0FEAFED8DAF15B /* Copy */,
+				54D7AE82CC96C801528C0848 /* Factory */,
+				9C640CB09865D0B3BAC6BD2A /* Planning */,
+				E93548850142C4D4CB5DC3E8 /* UI */,
+			);
+			path = Secondary;
+			sourceTree = "<group>";
+		};
+		9CC922728A0CBF455E96E6C3 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				41A8ADEED45B3FF5E35D51EE /* abc-life-areas-help-de.md */,
+				DF66BAC6619894188DCC6C3F /* abc-life-areas-help-en.md */,
+				ED4C86C13B12F5E36E84D923 /* abc-life-areas-help-es.md */,
+				729A89518E9A61003063B272 /* abc-life-areas-help-fr.md */,
+				3B687343C61F02E48D769064 /* abc-life-areas-help-it.md */,
+				D5D39DD4E4F517AAE4FFCA41 /* abc-life-areas-help-ko.md */,
+				90482B2B3A81E4048E1220C9 /* abc-life-areas-help-pt-BR.md */,
+				65FC1D2B90D00C9449A6BDD1 /* abc-life-areas-help-tr.md */,
+				230A84E11D69960F195F7566 /* abc-life-areas-help-zh-Hans.md */,
+			);
+			path = Help;
+			sourceTree = "<group>";
+		};
+		A25461C8FACE5BDA88B47D17 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				8E74A8A5FB74AB5EA593AD29 /* AstroCore */,
+				F2E03E29DC8872842157AB88 /* ContentKit */,
+				528E522101C2BF7DE054AD59 /* AstroCore */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		B13A9AD89B1053342AF0F4CB = {
+			isa = PBXGroup;
+			children = (
+				E0462EA6D8FED58A3560DD75 /* App */,
+				A25461C8FACE5BDA88B47D17 /* Packages */,
+				1809D3EAD9F6A3EFB7044627 /* stelyraagent-ios */,
+				509E4F80D97BC01E4E68BAC6 /* Tests */,
+				7B61FDC1B740671F71ED7061 /* UITests */,
+				F46B168FFA8FF4CDEB134F73 /* Frameworks */,
+				2A3B3DB669ECED42CFCC4B59 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC87ADA23650DE88DB4E4897 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				25F3EF7E1CC15884FCED7E75 /* InsightCardView.swift */,
+				A442A2A0FEE0721BD47D5411 /* InsightVisualRouter.swift */,
+				A1710685605150B67AE06DFA /* SharedCardComponents.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C05C0148D76367BA614419F7 /* Planning */ = {
+			isa = PBXGroup;
+			children = (
+				533CF09A3F2D411E2A606931 /* NatalContentPlanning.swift */,
+			);
+			path = Planning;
+			sourceTree = "<group>";
+		};
+		C468C76E8053C49FE73AB7FB /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				5CFDE3B8521B1F088DC3BB68 /* CurrentSkyCardDraftFactory.swift */,
+				95AFD58DE638A1667CC2544F /* CurrentSkyChartCardFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		C9AF02DAA69D4D7B10AB2AF3 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				1DBCE3BEDF9F0312B1325FFB /* ChartCardFactory.swift */,
+				76EFB000D256311BC7997AC8 /* ChartCardFactoryContext.swift */,
+				3BE8C163CA3B99BA7BE5CF41 /* InsightCardAssembler.swift */,
+				C9FA36735E1B8DEDA70225C0 /* LegacyCardFactorySupport.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		CBBFAE3387F99949E3B025B2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				7AD7FF6431EAA6F85B43D7C3 /* CSwissEphemeris */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D2B399EC18CBCF362CF5AE8B /* Planning */ = {
+			isa = PBXGroup;
+			children = (
+				BDD215B116758D7FFFAD2EC2 /* SolarReturnContentPlanning.swift */,
+			);
+			path = Planning;
+			sourceTree = "<group>";
+		};
+		E0462EA6D8FED58A3560DD75 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				06F39EF9812CE08C0A43A4D0 /* AdvancedChartCache.swift */,
+				28FFD19C3EBE803485ED4A45 /* AdvancedChartModels.swift */,
+				FDC6E6C8199D495D8F32A029 /* AIGeneration.swift */,
+				98A6BD75E18DD3D6C049187F /* AppAdvancedChartCalculationService.swift */,
+				33EEEA5B855B1E05431323D5 /* AppAIReportService.swift */,
+				26F053CA29131C56110C311C /* AppChartCalculationService.swift */,
+				590090BCC66C310AB2369FB2 /* AppEnrichmentService.swift */,
+				60ED3443866E30DE17ABB6B2 /* AppModel.swift */,
+				0997413FB15A22AFA419D34A /* AppRelationshipChartCalculationService.swift */,
+				4337A474AFF019E16E199BE5 /* AskHistory.swift */,
+				949CD5A0E88AA004BCDA8FDF /* Assets.xcassets */,
+				239D93518CADFCB362AE3D9A /* AstroTerms.swift */,
+				9C18FBE7D813C3D541F4C2C7 /* ChartDefinition.swift */,
+				59F29C119E91565C74024D55 /* ChartEvents.swift */,
+				CFA18E9B5EDCDB1D5359356F /* ChartRenderer.swift */,
+				FE184B904D5F4FC976464EDE /* ChartsView.swift */,
+				DEBC54BAE5F4D348C177B1CE /* Commerce.swift */,
+				0AA89BE6F7CBCDEA5BD86F3B /* ConsumerCopy.swift */,
+				3BAC23390C54DC398590427E /* ICloudBackup.swift */,
+				0B5DBDE270D59F189AA29629 /* Info.plist */,
+				F194906655F5BF945DEE846A /* InsightContent.swift */,
+				0329F58DAD16E8E3D914A0C8 /* InterpretationContextFactory.swift */,
+				E66635D61702ADC89B61A78F /* Localizable.xcstrings */,
+				0E4E905F6183F1B205250DF4 /* LocalizedFormatters.swift */,
+				DEE5A45B4C42199530E02AC2 /* LocationPicker.swift */,
+				0001748BCA6BDEE40FDAF69F /* Models.swift */,
+				4CDCB10E3017BFBF8AACECD1 /* OfflineLocationStore.swift */,
+				131A4FD561CD3EDA3B3C0569 /* OnboardingView.swift */,
+				5401CBEB4251BC528BCDE2AD /* PrivacyInfo.xcprivacy */,
+				BDD1FAD3202EA2C3A707C3FF /* ProfileView.swift */,
+				D3933BD5782B0B139357FBF6 /* Reports.swift */,
+				4EBE086645940F1DB1B58E7B /* ReportsView.swift */,
+				D3428E2B533EB80C7A392F57 /* RootView.swift */,
+				D4E2F5402DE9F8364545AC92 /* SnapshotCache.swift */,
+				C9CC6F38414A02A004254529 /* StelyraAgent.entitlements */,
+				83314649B2B88B1EF84102AE /* StelyraAgent.storekit */,
+				38198F8887C634E350DF6678 /* StelyraAgentApp.swift */,
+				F2124D2A498B5D93481B2C4F /* SynastryView.swift */,
+				5A23EF0542BC7C136BDDCCE8 /* Theme.swift */,
+				DACF165D23E2FE01C4A3872B /* TodayDashboard.swift */,
+				3CB2C3D8306425FD5A52E600 /* TodayEngine.swift */,
+				A958C79AA19EE640E7E93CBB /* TodayView.swift */,
+				41DB115F582BA668C9C65586 /* WeeklyForecast.swift */,
+				8CB88DFC01D5D7F4B025E003 /* Agent */,
+				5F7BD56CA4429437CBA73506 /* InfoPlist.strings */,
+				E7ABBD24730DD22BF656B9E5 /* Insights */,
+				43A4F762FED9BF0DF0006381 /* Resources */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E58ED14A690BEFE4B8AFF945 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3491CE6E878FE454AF7604E5 /* SynastryCardViews.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E7ABBD24730DD22BF656B9E5 /* Insights */ = {
+			isa = PBXGroup;
+			children = (
+				4024304E8DE737E6DEDC09E5 /* CurrentSky */,
+				7416D8405206274D233F4BFA /* Natal */,
+				9C95F1937410CFFEE7219F4E /* Secondary */,
+				455BCAC439A5DD7B0F4B1C8F /* Shared */,
+				973C1DAF4B747E8C0377C87D /* SolarReturn */,
+				86794A7D36CE7FA80E95F693 /* Synastry */,
+				50E9841681D24724963D008E /* Transit */,
+			);
+			path = Insights;
+			sourceTree = "<group>";
+		};
+		E93548850142C4D4CB5DC3E8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6C6194F5F308EC9A1DF339AD /* SecondaryCardViews.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F0608C8778CA79DC3167BC8A /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				66DB9495F3F054541652CD78 /* ClassicalTransitContractValidator.swift */,
+				23E19D5553D72F8596AD67B0 /* TransitCardContractValidator.swift */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
+		F2B4D30BAB3C2E8B261FDBFF /* Copy */ = {
+			isa = PBXGroup;
+			children = (
+				AB58818C891194223BF1EE37 /* CopyCatalogMatcher+Synastry.swift */,
+			);
+			path = Copy;
+			sourceTree = "<group>";
+		};
+		F46B168FFA8FF4CDEB134F73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D692423DEAED7149865AB01D /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC528737AE44CDC4A0CBB089 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				2E1404D7733F82FEA797E1AC /* NatalCardDraftFactory.swift */,
+				16DBD4175C542DE3EA424556 /* NatalChartCardFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		FEE21C93456E9E7CAA80A3D2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2B0038F6BC113BBD0A73E9AC /* TransitCardViews.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FF407545BE27EFC4CFBD4173 /* Copy */ = {
+			isa = PBXGroup;
+			children = (
+				0E8D01DB8E014421DC77F010 /* ClassicalTransitThemeMapper.swift */,
+				49E035E23191E4F81153E165 /* CopyCatalogMatcher+Transit.swift */,
+			);
+			path = Copy;
+			sourceTree = "<group>";
+		};
+		FF551DD6B18AB1670614B511 /* Planning */ = {
+			isa = PBXGroup;
+			children = (
+				B46A13D53B9693A380B5D9A9 /* ClassicalTransitPlanningStrategy.swift */,
+				CB53429B63692475C46CFDD2 /* TransitContentPlanning.swift */,
+			);
+			path = Planning;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		393D1B3A0E41FF45492D4421 /* StelyraAgentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B1E31205D4208F35DCAFEF3 /* Build configuration list for PBXNativeTarget "StelyraAgentTests" */;
+			buildPhases = (
+				AB4EAB010DA5DF76F6F937F0 /* Sources */,
+				B258D869EF1DE150B29E2135 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4F9FA84AFC4E81230AC3741 /* PBXTargetDependency */,
+			);
+			name = StelyraAgentTests;
+			packageProductDependencies = (
+				30D6CCE5269E50E84B2B7DEC /* AstroCore */,
+			);
+			productName = StelyraAgentTests;
+			productReference = 3EF883C9CC14FA1BCC5D94B9 /* StelyraAgentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4F9B0B62E91B84FEBD8FEEBF /* StelyraAgentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B0EFC291F081127F7D4795C /* Build configuration list for PBXNativeTarget "StelyraAgentUITests" */;
+			buildPhases = (
+				FF9EDE50BCB1A76EB5E90EF4 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE3D468632681330345640A8 /* PBXTargetDependency */,
+			);
+			name = StelyraAgentUITests;
+			packageProductDependencies = (
+			);
+			productName = StelyraAgentUITests;
+			productReference = F25CBB1A0D75F8305390186F /* StelyraAgentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A55AB525B3E4C0F2D11FA874 /* StelyraAgent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AD4046E9D374C6928B3F9C6 /* Build configuration list for PBXNativeTarget "StelyraAgent" */;
+			buildPhases = (
+				C5A225FCD257EB59255FDA63 /* Sources */,
+				5030A890962EA1B6F94137AE /* Resources */,
+				3F86223A58148A2B654D2220 /* Frameworks */,
+				3F8FDA9E7699BB4C5C4A3140 /* Validate Content and Localization */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StelyraAgent;
+			packageProductDependencies = (
+				A4AC4A75E749C50EF7AF5CB5 /* AstroCore */,
+				BF115572BAF85750F7889E8A /* ContentKit */,
+			);
+			productName = StelyraAgent;
+			productReference = 8A9BA65506EC06A834402887 /* StelyraAgent.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E62CF0027BEE603414E932A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					393D1B3A0E41FF45492D4421 = {
+						DevelopmentTeam = KCC8FFFAA5;
+						ProvisioningStyle = Automatic;
+					};
+					4F9B0B62E91B84FEBD8FEEBF = {
+						DevelopmentTeam = KCC8FFFAA5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A55AB525B3E4C0F2D11FA874;
+					};
+					A55AB525B3E4C0F2D11FA874 = {
+						DevelopmentTeam = KCC8FFFAA5;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4739432A745E63CB3BF2BB32 /* Build configuration list for PBXProject "StelyraAgent" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				de,
+				en,
+				es,
+				fr,
+				it,
+				ko,
+				"pt-BR",
+				tr,
+				"zh-Hans",
+			);
+			mainGroup = B13A9AD89B1053342AF0F4CB;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				80707037D142831BC27E9856 /* XCLocalSwiftPackageReference "Packages/AstroCore" */,
+				FBD89401D29F425BC0AE3A7A /* XCLocalSwiftPackageReference "Packages/ContentKit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 2A3B3DB669ECED42CFCC4B59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A55AB525B3E4C0F2D11FA874 /* StelyraAgent */,
+				393D1B3A0E41FF45492D4421 /* StelyraAgentTests */,
+				4F9B0B62E91B84FEBD8FEEBF /* StelyraAgentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5030A890962EA1B6F94137AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDA310FDDCF794DA5E1FCC8C /* Assets.xcassets in Resources */,
+				94AD62541BC3576F600D25DD /* AstroTerms-de.json in Resources */,
+				FFC80AD6BB300576410E1396 /* AstroTerms-en.json in Resources */,
+				AB97D70E804D64870DC45A2F /* AstroTerms-es.json in Resources */,
+				713C4568E5C6710FD7783FE8 /* AstroTerms-fr.json in Resources */,
+				89CFB438EB29439CFDAD0A90 /* AstroTerms-it.json in Resources */,
+				6541AB20EC974C0B1E3EF39A /* AstroTerms-ko.json in Resources */,
+				5BCA7BF7E79CCA7F8D08C8BB /* AstroTerms-pt-BR.json in Resources */,
+				E770063129D4C1D22EF67439 /* AstroTerms-tr.json in Resources */,
+				70132F53C7114EB6D645FA19 /* AstroTerms-zh-Hans.json in Resources */,
+				B83B5DC59CD5C7CEF53A4A03 /* CopyCatalog-en.json in Resources */,
+				DCDC3976E9094DF23344CDA6 /* CopyCatalog-es.json in Resources */,
+				088932251F598EFFE9611F35 /* CopyCatalog-fr.json in Resources */,
+				483E62A7E6D0A2BEF4460297 /* CopyCatalog-zh-Hans.json in Resources */,
+				80CEA595D7BD506DA9C928DA /* InfoPlist.strings in Resources */,
+				C606D4FA6660607B0E770A5C /* LICENSE in Resources */,
+				9E297DFF84AA927014F6EBAD /* Localizable.xcstrings in Resources */,
+				342AEC05BA3C0424FE467748 /* OfflineLocationData-LICENSES.txt in Resources */,
+				EEA4DD906B14CD83CC7FE050 /* OfflineLocations.sqlite3 in Resources */,
+				B1652CF0AA6B42BD10201C02 /* PrivacyInfo.xcprivacy in Resources */,
+				FCBD97C6B2D9B0FBD13D2375 /* PrivateContent in Resources */,
+				23AA84D007B6B91CF3D7CD7C /* PrivateContent-ask-en.json in Resources */,
+				2D0B7F3738645AF6F2DDEA08 /* PrivateContent-ask-zh-Hans.json in Resources */,
+				D49F88C66BB0DA45C850F797 /* PrivateContent-today-en.json in Resources */,
+				DCC7B101A5202926B02B619C /* PrivateContent-today-zh-Hans.json in Resources */,
+				10FA32BA2A42B6FF2E3E9231 /* StelyraAgent.storekit in Resources */,
+				61A8BEAA0C1A8E5147D0FE62 /* abc-life-areas-help-de.md in Resources */,
+				B9378E6F9A57CD2B6D8258E0 /* abc-life-areas-help-en.md in Resources */,
+				7A3ABD84A28729A3A1E946B8 /* abc-life-areas-help-es.md in Resources */,
+				212B0F86C40966E30C0A9D12 /* abc-life-areas-help-fr.md in Resources */,
+				24E069275BCA45ACC4EC565C /* abc-life-areas-help-it.md in Resources */,
+				392B0EFDFEB44916FE735BC0 /* abc-life-areas-help-ko.md in Resources */,
+				8027E108CC7F87791F0BDE28 /* abc-life-areas-help-pt-BR.md in Resources */,
+				8911BBB5E2FF479FACB684F9 /* abc-life-areas-help-tr.md in Resources */,
+				4085A5CDF5F609835ABD8B9A /* abc-life-areas-help-zh-Hans.md in Resources */,
+				21FC521D4CE39B66B6CB88C8 /* agpl-3.0.txt in Resources */,
+				E1BDEADD0AF69F7B77CA52DC /* ephe in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F8FDA9E7699BB4C5C4A3140 /* Validate Content and Localization */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/App/Localizable.xcstrings",
+				"$(SRCROOT)/App/Resources/AstroTerms-en.json",
+				"$(SRCROOT)/App/Resources/AstroTerms-zh-Hans.json",
+				"$(SRCROOT)/App/Resources/AstroTerms-es.json",
+				"$(SRCROOT)/App/Resources/AstroTerms-fr.json",
+				"$(SRCROOT)/App/Resources/AstroTerms-tr.json",
+				"$(SRCROOT)/App/Resources/AstroTerms-de.json",
+				"$(SRCROOT)/App/Resources/AstroTerms-it.json",
+				"$(SRCROOT)/App/Resources/AstroTerms-ko.json",
+				"$(SRCROOT)/Localization/UI/core.json",
+				"$(SRCROOT)/Localization/UI/shared-content-ui.json",
+				"$(SRCROOT)/Localization/UI/charts.json",
+				"$(SRCROOT)/Localization/UI/insights.json",
+				"$(SRCROOT)/Localization/UI/today-ask.json",
+				"$(SRCROOT)/Localization/UI/profile-settings.json",
+				"$(SRCROOT)/Localization/UI/reports-ai.json",
+				"$(SRCROOT)/Localization/UI/commerce-onboarding.json",
+				"$(SRCROOT)/Localization/UI/legal-license.json",
+				"$(SRCROOT)/ContentSchema/copy-catalog.schema.json",
+			);
+			name = "Validate Content and Localization";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -eu\ncd \"$SRCROOT/..\"\nexport PATH=~/.local/bin:/opt/homebrew/bin:/usr/local/bin:$PATH\ncommand -v node >/dev/null 2>&1 || { echo \"node not found in PATH=$PATH\" >&2; exit 1; }\nif test -f ios/App/Resources/CopyCatalog-en.json; then\n  node scripts/build-ios-copy-catalog.mjs --validate-runtime ios/App/Resources/CopyCatalog-en.json\n  node scripts/build-ios-copy-catalog.mjs --validate-runtime ios/App/Resources/CopyCatalog-zh-Hans.json\n  node scripts/build-ios-copy-catalog.mjs --validate-runtime ios/App/Resources/CopyCatalog-es.json\n  node scripts/build-ios-copy-catalog.mjs --validate-runtime ios/App/Resources/CopyCatalog-fr.json\nelse\n  echo \"Proprietary interpretation catalogs are not included; building the public calculation-only source tree.\"\nfi\nnode scripts/build-ios-localization.mjs --validate\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB4EAB010DA5DF76F6F937F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B12DC8B9B6EE608905157F5F /* ClassicalTransitPlanningTests.swift in Sources */,
+				B87290A58776DCB6132BD644 /* CommerceTests.swift in Sources */,
+				6C04D754B504A0F0FA2794E9 /* OfflineLocationStoreTests.swift in Sources */,
+				29829F9A7451C26416F8DEC5 /* TransitContentPlannerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5A225FCD257EB59255FDA63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E06D56C894AFD00C58735279 /* AIGeneration.swift in Sources */,
+				F82AAAAA92DAEBCA66FA220D /* AdvancedChartCache.swift in Sources */,
+				FD336315A4EC893FD54FCD48 /* AdvancedChartModels.swift in Sources */,
+				4B528C027008FEEDDD302FBC /* AgentAPIClient.swift in Sources */,
+				0CA9E717FAA930A10FC8F303 /* AgentAccountCoordinator.swift in Sources */,
+				5A258FC3BF5530EF822DD4B8 /* AgentAnalysisAssetStore.swift in Sources */,
+				F724FA274B3A5DC6E6B52148 /* AgentAssetsView.swift in Sources */,
+				54B7C22CCC1649E060360FBD /* AgentAstrologyToolExecutor.swift in Sources */,
+				0EA596C3209C645D2B648C79 /* AgentCapabilityCatalog.swift in Sources */,
+				EAFA1962C4D05FF04B58D149 /* AgentChartAssetStore.swift in Sources */,
+				11D7AA5CDE17C9BBFDBE0855 /* AgentConversationStore.swift in Sources */,
+				8A42B0A24E4CAD8FBA2ED013 /* AgentCredentialStore.swift in Sources */,
+				53D259AE011E481BD0DA9BFA /* AgentEvidenceBuilder.swift in Sources */,
+				C37740DF56D4CC86C40AF837 /* AgentLocalMemoryBuilder.swift in Sources */,
+				CAE42449B928124F58DB3F6A /* AgentModels.swift in Sources */,
+				A4C56501A2A7D45D4E9A403C /* AgentRunCoordinator.swift in Sources */,
+				3BB23BC789814DF2F4E349BA /* AgentStoreKitCoordinator.swift in Sources */,
+				8FED1B3E1A9519AD88AE367F /* AgentTechniquePlanner.swift in Sources */,
+				5D199CE3953E142845EE9BC8 /* AgentThemeCatalog.swift in Sources */,
+				B2834A7C3EBAA2078924F4DC /* AppAIReportService.swift in Sources */,
+				B93F9B4E8E733AB88789A270 /* AppAdvancedChartCalculationService.swift in Sources */,
+				4FB67752E456E39B68509585 /* AppChartCalculationService.swift in Sources */,
+				DC1497E6F39496B6635AF047 /* AppEnrichmentService.swift in Sources */,
+				7B6353AE4436E1F652959DB3 /* AppModel.swift in Sources */,
+				EAAC4DDF6653D502FC116C31 /* AppRelationshipChartCalculationService.swift in Sources */,
+				7A1BC0CA4E04D5A2309FE860 /* AskHistory.swift in Sources */,
+				CC3CFBB9E9488B5DC4A07F8F /* AstroTerms.swift in Sources */,
+				7AD25675544934F8242B41EE /* CardContractValidator.swift in Sources */,
+				D2C9286B1B30E6FDE2D0F63A /* ChartCardFactory.swift in Sources */,
+				1E5B109E0FC28C9D488026CB /* ChartCardFactoryContext.swift in Sources */,
+				3737F4446C4551C5435CC6AF /* ChartContentPlan.swift in Sources */,
+				4066E0AC0A4FC08B3A00C09C /* ChartDefinition.swift in Sources */,
+				B5000395C6870C2BDB6000F1 /* ChartEvents.swift in Sources */,
+				37CA931E332E44FC88932CB8 /* ChartRenderer.swift in Sources */,
+				BA7610CF21F7EDEB6E0DAE37 /* ChartsView.swift in Sources */,
+				7BBA3ACFB7519C1F1A6D29A5 /* ClassicalTransitContractValidator.swift in Sources */,
+				BF671541D92DDC95787FCE1E /* ClassicalTransitPlanningStrategy.swift in Sources */,
+				5FBDF4AA774026D8AAD5DEBF /* ClassicalTransitThemeMapper.swift in Sources */,
+				512D311B8C9F63B4761FA458 /* Commerce.swift in Sources */,
+				26BDEE9239C6A092DE02835C /* ConsumerCopy.swift in Sources */,
+				C836D6FEC64C3EB9651BBE67 /* CopyCatalogMatcher+CurrentSky.swift in Sources */,
+				875E1728CEBC7D405B611D54 /* CopyCatalogMatcher+Natal.swift in Sources */,
+				B3145CCFDB26025714B495A4 /* CopyCatalogMatcher+Planned.swift in Sources */,
+				82597CA6EF95954DF5510308 /* CopyCatalogMatcher+Secondary.swift in Sources */,
+				62AB5DE41E859D998230346B /* CopyCatalogMatcher+SolarReturn.swift in Sources */,
+				A8760695E04473F71BCE6EA3 /* CopyCatalogMatcher+Synastry.swift in Sources */,
+				623A4F48475077A8E2BEB77F /* CopyCatalogMatcher+Transit.swift in Sources */,
+				5986A95BBF969C400D20493F /* CurrentSkyCardDraftFactory.swift in Sources */,
+				8FBAF6026AE8BF545D5E3582 /* CurrentSkyCardViews.swift in Sources */,
+				BE4A017B1CDE9F2D6F817F6B /* CurrentSkyChartCardFactory.swift in Sources */,
+				C8663CDF5560023DDCC1132F /* CurrentSkyContentPlanning.swift in Sources */,
+				A624FDECC8D25FDBAC43E31B /* ICloudBackup.swift in Sources */,
+				7ECBBCF7318D8C163EE7413B /* InsightCardAssembler.swift in Sources */,
+				629319102ADE85F4DB146E55 /* InsightCardView.swift in Sources */,
+				1EEA3C754E572EFDD24F12FF /* InsightContent.swift in Sources */,
+				AA21C746BC1A72B52800F86C /* InsightFactory.swift in Sources */,
+				A4EC9C0219A21C316D2992DF /* InsightVisualRouter.swift in Sources */,
+				FE9506F56A0674C36626E2A7 /* InterpretationContextFactory.swift in Sources */,
+				5D151D7965A1FAB61B4F7C29 /* LegacyCardFactorySupport.swift in Sources */,
+				76BF3A7AFEB751101BDC2747 /* LocalizedFormatters.swift in Sources */,
+				48019D8FEF915235C1A3656C /* LocationPicker.swift in Sources */,
+				688AC42A44FF26DFECAE014B /* Models.swift in Sources */,
+				FE355D4D6B558777BEF1818F /* NatalCardDraftFactory.swift in Sources */,
+				4703A7BEA23E8A8306CC736E /* NatalCardViews.swift in Sources */,
+				63840E900350F7AF3D52BB10 /* NatalChartCardFactory.swift in Sources */,
+				A917DBAB4C026D80C000704D /* NatalContentPlanning.swift in Sources */,
+				353FC56DC0F917AF0D070E1D /* OfflineLocationStore.swift in Sources */,
+				ED0B42E33364327B24FC23D7 /* OnboardingView.swift in Sources */,
+				8BFCDFA1AD31E4334F8D5CFA /* ProfileView.swift in Sources */,
+				9D4B9543E9237D9629D52BFB /* Reports.swift in Sources */,
+				B36E665D2F359631081C86FF /* ReportsView.swift in Sources */,
+				1A5818FB1DAC573E1884E461 /* RootView.swift in Sources */,
+				A962298905B42098C11E90A0 /* SecondaryCardDraftFactory.swift in Sources */,
+				8032332A1BD19CCE71D80880 /* SecondaryCardViews.swift in Sources */,
+				2B299A4893840C8A6FFF190C /* SecondaryChartCardFactory.swift in Sources */,
+				CC036DF5B309554D18B2FB3B /* SecondaryContentPlanning.swift in Sources */,
+				D02111AC8BC4C4A476A93086 /* SharedCardComponents.swift in Sources */,
+				0DB24641C8BF08236DDFF58D /* SnapshotCache.swift in Sources */,
+				A002409074280B0E39E5E389 /* SolarReturnCardDraftFactory.swift in Sources */,
+				944E82DC06973E07FE796052 /* SolarReturnCardViews.swift in Sources */,
+				5E445F39FEE6DC571788B533 /* SolarReturnChartCardFactory.swift in Sources */,
+				C59DD440D475FCB94CA91B46 /* SolarReturnContentPlanning.swift in Sources */,
+				A07DB941682EAD0CAB62D344 /* StelyraAgentAccountView.swift in Sources */,
+				9ACBC8AE28D03714692CC41B /* StelyraAgentApp.swift in Sources */,
+				92DCCA5AF567B849437005B6 /* StelyraAgentChatView.swift in Sources */,
+				C784538987A86105AF16ACA7 /* SynastryCardViews.swift in Sources */,
+				AD49184C222518AA4EE91A01 /* SynastryChartCardFactory.swift in Sources */,
+				D5F037B1235D67418498533D /* SynastryLegacyCardFactory.swift in Sources */,
+				4E75660DE4D79DBD4517DDB9 /* SynastryView.swift in Sources */,
+				CAC77F5231EE3117CBD99FE6 /* Theme.swift in Sources */,
+				B37BDEE51E5B20A046240180 /* TodayDashboard.swift in Sources */,
+				8AF432FF75CE6DE5E569DBF1 /* TodayEngine.swift in Sources */,
+				9492E2DFE3C595719585C173 /* TodayView.swift in Sources */,
+				96640A305092E9A017C73EE4 /* TransitCardContractValidator.swift in Sources */,
+				0594E46A9C5AB4AF222F7517 /* TransitCardFactory.swift in Sources */,
+				C2302741092C48A9E312EF42 /* TransitCardViews.swift in Sources */,
+				A92E541411EFDC253DE9639F /* TransitChartCardFactory.swift in Sources */,
+				F2E39DD46F56B5A874D957D9 /* TransitContentPlanning.swift in Sources */,
+				1996A149815F44DF0D3BC7D1 /* WeeklyForecast.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF9EDE50BCB1A76EB5E90EF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25DFE60ED43F41C377F7B6FA /* VisualRegressionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4F9FA84AFC4E81230AC3741 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A55AB525B3E4C0F2D11FA874 /* StelyraAgent */;
+			targetProxy = A897AFE42793A1BAAC52657D /* PBXContainerItemProxy */;
+		};
+		AE3D468632681330345640A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A55AB525B3E4C0F2D11FA874 /* StelyraAgent */;
+			targetProxy = 18B9C6E8B9864BF0F9B9AB8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F7BD56CA4429437CBA73506 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32243AD0905B50E9122DB447 /* de */,
+				85ACBB139A6AEAF46A45C727 /* en */,
+				27A723CCB42C163C2CBA9480 /* es */,
+				90AC86B3264493E30DD3807D /* fr */,
+				01CA427CAD3C6DC09E1E0978 /* it */,
+				A12B9EF7A34575BACF140076 /* ko */,
+				540D688F6D18FF4FC7222028 /* tr */,
+				10A70A2B8A2F1CA45FD4F088 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		043F731712865CCDFFF347BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		2BDD009BEB6E9D30E75F73E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APP_ATTEST_ENVIRONMENT = production;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/StelyraAgent.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 17;
+				DEVELOPMENT_TEAM = KCC8FFFAA5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StelyraAgent;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "StelyraAgent uses your location only when you request it, to calculate local chart angles and houses.";
+				INFOPLIST_KEY_STELYRAAGENT_RUNTIME_BASE_URL = "$(STELYRAAGENT_RUNTIME_BASE_URL)";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoguiwk.interstellar;
+				PRODUCT_NAME = StelyraAgent;
+				SDKROOT = iphoneos;
+				STELYRAAGENT_RELAY_BASE_URL = "https://disabled.invalid";
+				STELYRAAGENT_RUNTIME_BASE_URL = "https://stelyraagent.example.invalid";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		7B13C6F71A4C1AA9BC7F2672 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KCC8FFFAA5;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoguiwk.interstellar.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StelyraAgent.app/StelyraAgent";
+			};
+			name = Debug;
+		};
+		ABED07B86736059A2AC7BDDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KCC8FFFAA5;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoguiwk.interstellar.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StelyraAgent;
+			};
+			name = Debug;
+		};
+		ECB231C1F4531B238FC69817 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		F0BA78936347E864396F75AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KCC8FFFAA5;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoguiwk.interstellar.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StelyraAgent;
+			};
+			name = Release;
+		};
+		F6AE33EFEED8744BFFCC469A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APP_ATTEST_ENVIRONMENT = production;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/StelyraAgent.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 17;
+				DEVELOPMENT_TEAM = KCC8FFFAA5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StelyraAgent;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "StelyraAgent uses your location only when you request it, to calculate local chart angles and houses.";
+				INFOPLIST_KEY_STELYRAAGENT_RUNTIME_BASE_URL = "$(STELYRAAGENT_RUNTIME_BASE_URL)";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoguiwk.interstellar;
+				PRODUCT_NAME = StelyraAgent;
+				SDKROOT = iphoneos;
+				STELYRAAGENT_RELAY_BASE_URL = "$(STELYRAAGENT_SANDBOX_RELAY_BASE_URL)";
+				STELYRAAGENT_RUNTIME_BASE_URL = "http://127.0.0.1:8787";
+				STELYRAAGENT_SANDBOX_RELAY_BASE_URL = "https://disabled.invalid";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FD7AE9B5E168F4214C8417AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KCC8FFFAA5;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoguiwk.interstellar.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StelyraAgent.app/StelyraAgent";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AD4046E9D374C6928B3F9C6 /* Build configuration list for PBXNativeTarget "StelyraAgent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6AE33EFEED8744BFFCC469A /* Debug */,
+				2BDD009BEB6E9D30E75F73E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3B0EFC291F081127F7D4795C /* Build configuration list for PBXNativeTarget "StelyraAgentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABED07B86736059A2AC7BDDE /* Debug */,
+				F0BA78936347E864396F75AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4739432A745E63CB3BF2BB32 /* Build configuration list for PBXProject "StelyraAgent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECB231C1F4531B238FC69817 /* Debug */,
+				043F731712865CCDFFF347BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7B1E31205D4208F35DCAFEF3 /* Build configuration list for PBXNativeTarget "StelyraAgentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B13C6F71A4C1AA9BC7F2672 /* Debug */,
+				FD7AE9B5E168F4214C8417AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		80707037D142831BC27E9856 /* XCLocalSwiftPackageReference "Packages/AstroCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/AstroCore;
+		};
+		FBD89401D29F425BC0AE3A7A /* XCLocalSwiftPackageReference "Packages/ContentKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/ContentKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		30D6CCE5269E50E84B2B7DEC /* AstroCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AstroCore;
+		};
+		A4AC4A75E749C50EF7AF5CB5 /* AstroCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AstroCore;
+		};
+		BF115572BAF85750F7889E8A /* ContentKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ContentKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8E62CF0027BEE603414E932A /* Project object */;
+}

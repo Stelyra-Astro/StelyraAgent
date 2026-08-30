@@ -1,0 +1,29 @@
+# Local configuration and secrets
+**/.env
+**/.env.*
+!**/.env.example
+**/secrets/*
+!**/secrets/.gitkeep
+
+# JavaScript dependencies and build output
+**/node_modules/
+**/dist/
+**/coverage/
+**/.vite/
+**/npm-debug.log*
+**/*.tsbuildinfo
+
+# iOS/Xcode local output
+**/DerivedData/
+**/*.xcuserstate
+**/xcuserdata/
+**/.build/
+**/__pycache__/
+**/.pytest_cache/
+
+# Local Docker artifacts and reports
+*.tar
+*.tar.gz
+*.tgz
+reports/local/
+artifacts/local/

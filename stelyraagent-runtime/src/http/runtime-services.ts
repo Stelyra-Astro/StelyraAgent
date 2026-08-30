@@ -1,0 +1,43 @@
+import type { AstroDatabase } from '../db/sqlite-database.ts';
+import type { RuntimeConfig } from '../config/runtime-config.ts';
+import type { SqliteAccountRepository } from '../repositories/sqlite-account-repository.ts';
+import type { SqliteCreditRepository } from '../repositories/sqlite-credit-repository.ts';
+import type { SqliteIAPRepository } from '../repositories/sqlite-iap-repository.ts';
+import type { SqliteRunRepository } from '../repositories/sqlite-run-repository.ts';
+import type { AccountService } from '../account/account-service.ts';
+import type { AppleAccountDeletionService } from '../account/apple-account-deletion-service.ts';
+import type { SessionService } from '../account/session-service.ts';
+import type { RunService } from '../run/run-service.ts';
+import type { AstrologyAgentRuntime } from '../agent/astrology-agent-runtime.ts';
+import type { IAPService } from '../iap/iap-service.ts';
+import type { StoreTransactionVerifier } from '../iap/transaction-verifier.ts';
+import type { AppleIdentityVerifier } from '../auth/apple-identity-verifier.ts';
+import type { AppleTokenExchange } from '../auth/apple-token-exchange.ts';
+import type { SecretBox } from '../auth/secret-box.ts';
+import type { AdminRepository } from '../admin/admin-repository.ts';
+import type { AdminBasicAuth } from '../admin/admin-auth.ts';
+import type { ModelCatalog } from '../policy/model-catalog.ts';
+import type { RunAdmissionPolicy } from '../policy/run-admission-policy.ts';
+
+export interface RuntimeServices {
+  db: AstroDatabase;
+  config: RuntimeConfig;
+  accounts: SqliteAccountRepository;
+  credits: SqliteCreditRepository;
+  iapRepository: SqliteIAPRepository;
+  runs: SqliteRunRepository;
+  accountService: AccountService;
+  accountDeletionService: AppleAccountDeletionService;
+  sessions: SessionService;
+  runService: RunService;
+  agent: AstrologyAgentRuntime;
+  iapService: IAPService;
+  transactionVerifier: StoreTransactionVerifier;
+  appleVerifier: AppleIdentityVerifier;
+  appleTokenExchange: AppleTokenExchange;
+  secretBox: SecretBox | null;
+  adminRepository: AdminRepository;
+  adminAuth: AdminBasicAuth | null;
+  modelCatalog: ModelCatalog;
+  admission: RunAdmissionPolicy;
+}

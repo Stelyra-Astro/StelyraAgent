@@ -1,0 +1,170 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stelyraagent.local/schemas/interpretation-pack.schema.json",
+  "title": "StelyraAgent iOS Interpretation Content Pack",
+  "type": "object",
+  "required": ["schemaVersion", "contentVersion", "locale", "entries", "rules"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "contentVersion": { "type": "string", "minLength": 1 },
+    "locale": { "enum": ["en", "zh-Hans"] },
+    "entries": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/corpusEntry" }
+    },
+    "rules": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/compositionRule" }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "stringSet": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "selector": {
+      "type": "object",
+      "properties": {
+        "techniques": { "$ref": "#/$defs/stringSet" },
+        "cardIDs": { "$ref": "#/$defs/stringSet" },
+        "pointIDs": { "$ref": "#/$defs/stringSet" },
+        "referencePointIDs": { "$ref": "#/$defs/stringSet" },
+        "signIDs": { "$ref": "#/$defs/stringSet" },
+        "houses": {
+          "type": "array",
+          "items": { "type": "integer", "minimum": 1, "maximum": 12 },
+          "uniqueItems": true
+        },
+        "aspectIDs": { "$ref": "#/$defs/stringSet" },
+        "phaseIDs": { "$ref": "#/$defs/stringSet" },
+        "tones": { "$ref": "#/$defs/stringSet" },
+        "requiredTags": { "$ref": "#/$defs/stringSet" }
+      },
+      "additionalProperties": false,
+      "minProperties": 1
+    },
+    "corpusEntry": {
+      "type": "object",
+      "required": [
+        "id",
+        "locale",
+        "layer",
+        "selector",
+        "summary",
+        "detail",
+        "priority",
+        "sourceRevision",
+        "status"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._-]+$"
+        },
+        "locale": { "enum": ["en", "zh-Hans"] },
+        "layer": {
+          "enum": [
+            "core",
+            "supportive",
+            "pressure",
+            "advice",
+            "timing",
+            "transition",
+            "atmosphere",
+            "empty"
+          ]
+        },
+        "selector": { "$ref": "#/$defs/selector" },
+        "summary": { "type": "string", "minLength": 1 },
+        "detail": { "type": "string", "minLength": 1 },
+        "priority": { "type": "integer" },
+        "deduplicationGroup": { "type": ["string", "null"] },
+        "sourceRevision": { "type": "string", "minLength": 1 },
+        "status": { "enum": ["draft", "sample", "review", "approved"] }
+      },
+      "additionalProperties": false
+    },
+    "query": {
+      "type": "object",
+      "required": ["layers", "limit"],
+      "properties": {
+        "layers": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "core",
+              "supportive",
+              "pressure",
+              "advice",
+              "timing",
+              "transition",
+              "atmosphere",
+              "empty"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "signalRanks": {
+          "type": "array",
+          "items": { "type": "integer", "minimum": 1 },
+          "uniqueItems": true
+        },
+        "requiredTags": { "$ref": "#/$defs/stringSet" },
+        "limit": { "type": "integer", "minimum": 1, "maximum": 6 }
+      },
+      "additionalProperties": false
+    },
+    "binding": {
+      "type": "object",
+      "required": ["name", "query", "required"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "pattern": "^[a-z][a-zA-Z0-9]*$"
+        },
+        "query": { "$ref": "#/$defs/query" },
+        "required": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    },
+    "compositionRule": {
+      "type": "object",
+      "required": [
+        "id",
+        "technique",
+        "cardID",
+        "summaryTemplate",
+        "detailTemplate",
+        "bindings"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._-]+$"
+        },
+        "technique": {
+          "enum": ["natal", "current-sky", "transit", "secondary"]
+        },
+        "cardID": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-]+$"
+        },
+        "summaryTemplate": { "type": "string", "minLength": 1 },
+        "detailTemplate": { "type": "string", "minLength": 1 },
+        "bindings": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/binding" },
+          "minItems": 1
+        },
+        "summaryMinimum": { "type": "integer", "minimum": 1 },
+        "summaryMaximum": { "type": "integer", "minimum": 1 },
+        "detailMinimum": { "type": "integer", "minimum": 1 },
+        "detailMaximum": { "type": "integer", "minimum": 1 }
+      },
+      "additionalProperties": false
+    }
+  }
+}

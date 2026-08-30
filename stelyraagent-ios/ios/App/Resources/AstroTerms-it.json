@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "locale": "it",
+  "bodies": {
+    "sun": "Sole",
+    "moon": "Luna",
+    "mercury": "Mercurio",
+    "venus": "Venere",
+    "mars": "Marte",
+    "jupiter": "Giove",
+    "saturn": "Saturno",
+    "uranus": "Urano",
+    "neptune": "Nettuno",
+    "pluto": "Plutone",
+    "trueNode": "Nodo Nord", "lilith": "Lilith", "partOfFortune": "Parte di Fortuna", "juno": "Giunone"
+  },
+  "zodiac": {
+    "aries": "Ariete",
+    "taurus": "Toro",
+    "gemini": "Gemelli",
+    "cancer": "Cancro",
+    "leo": "Leone",
+    "virgo": "Vergine",
+    "libra": "Bilancia",
+    "scorpio": "Scorpione",
+    "sagittarius": "Sagittario",
+    "capricorn": "Capricorno",
+    "aquarius": "Acquario",
+    "pisces": "Pesci"
+  },
+  "aspects": {
+    "conjunction": "Congiunzione",
+    "sextile": "Sestile",
+    "square": "Quadratura",
+    "trine": "Trigono",
+    "opposition": "Opposizione"
+  },
+  "aspectPhases": {
+    "applying": "In applicazione",
+    "exact": "Esatto",
+    "separating": "In separazione"
+  },
+  "motions": {
+    "direct": "Diretto",
+    "retrograde": "Retrogrado",
+    "stationary": "Stazionario"
+  },
+  "elements": {
+    "fire": "Fuoco",
+    "earth": "Terra",
+    "air": "Aria",
+    "water": "Acqua"
+  },
+  "modalities": {
+    "cardinal": "Cardinale",
+    "fixed": "Fisso",
+    "mutable": "Mobile"
+  },
+  "angles": {
+    "ascendant": "Ascendente",
+    "descendant": "Discendente",
+    "midheaven": "Medio Cielo",
+    "imumCoeli": "Fondo Cielo"
+  },
+  "moonPhases": {
+    "new-moon": "Luna nuova",
+    "waxing-crescent": "Falce crescente",
+    "first-quarter": "Primo quarto",
+    "waxing-gibbous": "Gibbosa crescente",
+    "full-moon": "Luna piena",
+    "waning-gibbous": "Gibbosa calante",
+    "last-quarter": "Ultimo quarto",
+    "waning-crescent": "Falce calante"
+  },
+  "chartKinds": {
+    "natal": "Tema natale",
+    "currentSky": "Cielo attuale",
+    "transit": "Transiti",
+    "secondary": "Progressioni secondarie",
+    "solarReturn": "Rivoluzione solare",
+    "synastry": "Sinastria"
+  },
+  "formats": {
+    "house": "Casa %d"
+  }
+}

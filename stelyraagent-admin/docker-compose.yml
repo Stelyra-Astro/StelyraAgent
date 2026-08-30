@@ -1,0 +1,7 @@
+services:
+  stelyraagent-admin:
+    build: .
+    container_name: stelyraagent-admin
+    restart: unless-stopped
+    ports:
+      - "8788:8080"

@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "locale": "en",
+  "bodies": { "sun": "Sun", "moon": "Moon", "mercury": "Mercury", "venus": "Venus", "mars": "Mars", "jupiter": "Jupiter", "saturn": "Saturn", "uranus": "Uranus", "neptune": "Neptune", "pluto": "Pluto", "trueNode": "North Node", "lilith": "Lilith", "partOfFortune": "Part of Fortune", "juno": "Juno" },
+  "zodiac": { "aries": "Aries", "taurus": "Taurus", "gemini": "Gemini", "cancer": "Cancer", "leo": "Leo", "virgo": "Virgo", "libra": "Libra", "scorpio": "Scorpio", "sagittarius": "Sagittarius", "capricorn": "Capricorn", "aquarius": "Aquarius", "pisces": "Pisces" },
+  "aspects": { "conjunction": "Conjunction", "sextile": "Sextile", "square": "Square", "trine": "Trine", "opposition": "Opposition" },
+  "aspectPhases": { "applying": "Applying", "exact": "Exact", "separating": "Separating" },
+  "motions": { "direct": "Direct", "retrograde": "Retrograde", "stationary": "Stationary" },
+  "elements": { "fire": "Fire", "earth": "Earth", "air": "Air", "water": "Water" },
+  "modalities": { "cardinal": "Cardinal", "fixed": "Fixed", "mutable": "Mutable" },
+  "angles": { "ascendant": "Ascendant", "descendant": "Descendant", "midheaven": "Midheaven", "imumCoeli": "Imum Coeli" },
+  "moonPhases": { "new-moon": "New Moon", "waxing-crescent": "Waxing Crescent", "first-quarter": "First Quarter", "waxing-gibbous": "Waxing Gibbous", "full-moon": "Full Moon", "waning-gibbous": "Waning Gibbous", "last-quarter": "Last Quarter", "waning-crescent": "Waning Crescent" },
+  "chartKinds": { "natal": "Natal", "currentSky": "Current Sky", "transit": "Transits", "secondary": "Secondary Progressions", "solarReturn": "Solar Return", "synastry": "Synastry" },
+  "formats": { "house": "House %d" }
+}

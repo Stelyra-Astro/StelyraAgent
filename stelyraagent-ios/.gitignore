@@ -1,0 +1,40 @@
+.DS_Store
+.build/
+DerivedData/
+xcuserdata/
+**/__pycache__/
+*.py[cod]
+*.xcuserstate
+*.xcarchive
+*.ipa
+*.mobileprovision
+*.p8
+*.log
+.env
+.env.*
+
+# Private monorepo coordination, backend, deployment, and agent state do not
+# belong in the public iOS source repository.
+/AGENTS.md
+/.agents/
+/.claude/
+/.codex/
+/docs/
+/relay/
+/infra/
+/artifacts/
+
+# Large third-party source archives are build-time inputs, not repository or
+# app-bundle resources. The generated compact SQLite index is tracked instead.
+vendor/geonames/*.zip
+vendor/timezone-boundary-builder/*.zip
+
+# Proprietary editorial sources and generated runtime packs are never public.
+ios/PrivateContent/
+ios/PrivateRules/
+ios/TranslationExports/
+ios/App/Resources/CopyCatalog*.json
+ios/App/Resources/PrivateContent*.json
+ios/App/Resources/PrivateCorpus*.json
+ios/App/Resources/PrivateRules*.json
+ios/App/Resources/PrivateContent/*.json

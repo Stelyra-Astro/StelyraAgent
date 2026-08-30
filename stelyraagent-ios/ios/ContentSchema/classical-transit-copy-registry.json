@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "chartID": "classical.transit",
+  "cardIDs": [
+    "current-story",
+    "current-cycles",
+    "transit-timeline",
+    "planet-paths",
+    "life-areas",
+    "active-transits"
+  ],
+  "copySlots": [
+    "integratedStory",
+    "signalRole",
+    "cycleChapter",
+    "planetPathShort",
+    "lifeAreaShort",
+    "activeTransitShort"
+  ],
+  "integratedThemeIDs": [
+    "supported-momentum",
+    "constrained-momentum",
+    "mixed-testimony"
+  ],
+  "signalRoleIDs": [
+    "beneficSupport",
+    "maleficPressure",
+    "fortified",
+    "impaired",
+    "received"
+  ],
+  "cycleThemesByRole": {
+    "longCycle": ["fortified-planet", "debilitated-planet", "reception-support", "applying-contact", "exact-contact", "separating-contact", "retrograde-review", "solar-fortification", "solar-impairment", "motion-change"],
+    "currentCycle": ["fortified-planet", "debilitated-planet", "reception-support", "applying-contact", "exact-contact", "separating-contact", "retrograde-review", "solar-fortification", "solar-impairment", "motion-change"],
+    "dailyCycle": ["fortified-planet", "debilitated-planet", "reception-support", "applying-contact", "exact-contact", "separating-contact", "retrograde-review", "solar-fortification", "solar-impairment", "motion-change"]
+  },
+  "planetPathThemeIDs": [
+    "fortified-planet",
+    "debilitated-planet",
+    "retrograde-review",
+    "solar-fortification",
+    "solar-impairment",
+    "angular-emphasis",
+    "succedent-continuity",
+    "cadent-delay"
+  ],
+  "lifeAreaIDs": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "activeThemesByRole": {
+    "active": ["fortified-planet", "debilitated-planet", "reception-support", "applying-contact", "exact-contact", "separating-contact", "retrograde-review", "solar-fortification", "solar-impairment"],
+    "activeSignIngress": ["motion-change"],
+    "activeHouseIngress": ["motion-change"],
+    "activeStationRetrograde": ["motion-change"],
+    "activeStationDirect": ["motion-change"]
+  },
+  "variableContracts": {},
+  "unsupportedCapabilities": [
+    "sect-day-night",
+    "prohibition-frustration-prevented-perfection"
+  ]
+}

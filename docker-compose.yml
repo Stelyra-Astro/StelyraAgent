@@ -1,0 +1,29 @@
+services:
+  stelyraagent-runtime:
+    image: ${STELYRAAGENT_RUNTIME_IMAGE:?STELYRAAGENT_RUNTIME_IMAGE must be set}
+    container_name: stelyraagent-runtime
+    restart: unless-stopped
+    env_file: ./stelyraagent-runtime/.env
+    ports:
+      - "8787:8787"
+    volumes:
+      - stelyraagent_runtime_data:/data
+      - ./stelyraagent-runtime/secrets:/run/secrets/apple:ro
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:8787/health').then(r=>{if(!r.ok)process.exit(1)}).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  stelyraagent-admin:
+    image: ${STELYRAAGENT_ADMIN_IMAGE:?STELYRAAGENT_ADMIN_IMAGE must be set}
+    container_name: stelyraagent-admin
+    restart: unless-stopped
+    depends_on:
+      stelyraagent-runtime:
+        condition: service_healthy
+    ports:
+      - "8788:8080"
+
+volumes:
+  stelyraagent_runtime_data:

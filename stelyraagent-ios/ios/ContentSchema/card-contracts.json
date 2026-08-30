@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 4,
+  "cards": {
+    "natal": [
+      "natal-interpretation",
+      "emotional-needs",
+      "love-connection",
+      "career-direction",
+      "strengths-growth",
+      "element-balance",
+      "house-emphasis",
+      "chart-signature",
+      "planet-placements",
+      "key-aspects"
+    ],
+    "current-sky": [
+      "sky-overview",
+      "moon-now",
+      "aspect-pattern",
+      "planetary-motion",
+      "sign-changes",
+      "element-climate",
+      "upcoming-7-days"
+    ],
+    "transit": [
+      "current-story",
+      "current-cycles",
+      "transit-timeline",
+      "planet-paths",
+      "life-areas",
+      "active-transits"
+    ],
+    "secondary": [
+      "developmental-chapter",
+      "progressed-moon",
+      "identity-development",
+      "turning-points",
+      "areas-maturing",
+      "timeline"
+    ],
+    "solar-return": [
+      "year-theme",
+      "year-anchors",
+      "priority-areas",
+      "year-dynamics",
+      "year-timeline",
+      "natal-overlay",
+      "year-aspects"
+    ],
+    "synastry": [
+      "relationship-overview",
+      "perspectives",
+      "emotional-connection",
+      "communication",
+      "chemistry",
+      "commitment",
+      "house-overlays",
+      "key-inter-aspects"
+    ],
+    "tertiary": [],
+    "lunar-return": [],
+    "solar-arc": [],
+    "relocation": [],
+    "twelfth-harmonic": [],
+    "thirteenth-harmonic": []
+  }
+}

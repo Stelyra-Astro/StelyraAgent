@@ -1,0 +1,157 @@
+name: StelyraAgent
+
+options:
+  bundleIdPrefix: com.xiaoguiwk
+  createIntermediateGroups: true
+  deploymentTarget:
+    iOS: "17.0"
+
+packages:
+  AstroCore:
+    path: Packages/AstroCore
+  ContentKit:
+    path: Packages/ContentKit
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_TREAT_WARNINGS_AS_ERRORS: YES
+
+targets:
+  StelyraAgent:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+      - path: App/Resources/PrivateContent
+        type: folder
+        buildPhase: resources
+      - path: ../vendor/swisseph/ephe
+        type: folder
+        buildPhase: resources
+      - path: Packages/AstroCore/Sources/CSwissEphemeris/LICENSE
+        buildPhase: resources
+      - path: Packages/AstroCore/Sources/CSwissEphemeris/agpl-3.0.txt
+        buildPhase: resources
+    dependencies:
+      - package: AstroCore
+      - package: ContentKit
+      - sdk: libsqlite3.tbd
+    settings:
+      base:
+        CODE_SIGN_STYLE: Automatic
+        CODE_SIGN_ENTITLEMENTS: App/StelyraAgent.entitlements
+        DEVELOPMENT_TEAM: KCC8FFFAA5
+        PRODUCT_BUNDLE_IDENTIFIER: com.xiaoguiwk.interstellar
+        PRODUCT_NAME: StelyraAgent
+        MARKETING_VERSION: 1.0
+        CURRENT_PROJECT_VERSION: 17
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_FILE: App/Info.plist
+        INFOPLIST_KEY_CFBundleDisplayName: StelyraAgent
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.utilities
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_ITSAppUsesNonExemptEncryption: NO
+        INFOPLIST_KEY_NSLocationWhenInUseUsageDescription: StelyraAgent uses your location only when you request it, to calculate local chart angles and houses.
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        TARGETED_DEVICE_FAMILY: "1"
+        SUPPORTS_MACCATALYST: NO
+      configs:
+        Debug:
+          APP_ATTEST_ENVIRONMENT: production
+          STELYRAAGENT_RUNTIME_BASE_URL: http://127.0.0.1:8787
+          INFOPLIST_KEY_STELYRAAGENT_RUNTIME_BASE_URL: "$(STELYRAAGENT_RUNTIME_BASE_URL)"
+          STELYRAAGENT_SANDBOX_RELAY_BASE_URL: https://disabled.invalid
+          STELYRAAGENT_RELAY_BASE_URL: "$(STELYRAAGENT_SANDBOX_RELAY_BASE_URL)"
+        Release:
+          APP_ATTEST_ENVIRONMENT: production
+          STELYRAAGENT_RUNTIME_BASE_URL: https://stelyraagent.example.invalid
+          INFOPLIST_KEY_STELYRAAGENT_RUNTIME_BASE_URL: "$(STELYRAAGENT_RUNTIME_BASE_URL)"
+          STELYRAAGENT_RELAY_BASE_URL: https://disabled.invalid
+    postBuildScripts:
+      - name: Validate Content and Localization
+        script: |
+          set -eu
+          cd "$SRCROOT/.."
+          export PATH=~/.local/bin:/opt/homebrew/bin:/usr/local/bin:$PATH
+          command -v node >/dev/null 2>&1 || { echo "node not found in PATH=$PATH" >&2; exit 1; }
+          if test -f ios/App/Resources/CopyCatalog-en.json; then
+            node scripts/build-ios-copy-catalog.mjs --validate-runtime ios/App/Resources/CopyCatalog-en.json
+            node scripts/build-ios-copy-catalog.mjs --validate-runtime ios/App/Resources/CopyCatalog-zh-Hans.json
+            node scripts/build-ios-copy-catalog.mjs --validate-runtime ios/App/Resources/CopyCatalog-es.json
+            node scripts/build-ios-copy-catalog.mjs --validate-runtime ios/App/Resources/CopyCatalog-fr.json
+          else
+            echo "Proprietary interpretation catalogs are not included; building the public calculation-only source tree."
+          fi
+          node scripts/build-ios-localization.mjs --validate
+        inputFiles:
+          - $(SRCROOT)/App/Localizable.xcstrings
+          - $(SRCROOT)/App/Resources/AstroTerms-en.json
+          - $(SRCROOT)/App/Resources/AstroTerms-zh-Hans.json
+          - $(SRCROOT)/App/Resources/AstroTerms-es.json
+          - $(SRCROOT)/App/Resources/AstroTerms-fr.json
+          - $(SRCROOT)/App/Resources/AstroTerms-tr.json
+          - $(SRCROOT)/App/Resources/AstroTerms-de.json
+          - $(SRCROOT)/App/Resources/AstroTerms-it.json
+          - $(SRCROOT)/App/Resources/AstroTerms-ko.json
+          - $(SRCROOT)/Localization/UI/core.json
+          - $(SRCROOT)/Localization/UI/shared-content-ui.json
+          - $(SRCROOT)/Localization/UI/charts.json
+          - $(SRCROOT)/Localization/UI/insights.json
+          - $(SRCROOT)/Localization/UI/today-ask.json
+          - $(SRCROOT)/Localization/UI/profile-settings.json
+          - $(SRCROOT)/Localization/UI/reports-ai.json
+          - $(SRCROOT)/Localization/UI/commerce-onboarding.json
+          - $(SRCROOT)/Localization/UI/legal-license.json
+          - $(SRCROOT)/ContentSchema/copy-catalog.schema.json
+    scheme:
+      storeKitConfiguration: App/StelyraAgent.storekit
+      gatherCoverageData: true
+      testTargets:
+        - StelyraAgentTests
+        - StelyraAgentUITests
+  StelyraAgentTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: Tests
+    dependencies:
+      - target: StelyraAgent
+      - package: AstroCore
+    settings:
+      base:
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: KCC8FFFAA5
+        PRODUCT_BUNDLE_IDENTIFIER: com.xiaoguiwk.interstellar.tests
+        GENERATE_INFOPLIST_FILE: YES
+  StelyraAgentUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: UITests
+    dependencies:
+      - target: StelyraAgent
+    settings:
+      base:
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: KCC8FFFAA5
+        PRODUCT_BUNDLE_IDENTIFIER: com.xiaoguiwk.interstellar.uitests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_TARGET_NAME: StelyraAgent
+
+schemes:
+  StelyraAgent Live Sandbox:
+    build:
+      targets:
+        StelyraAgent: all
+    run:
+      config: Debug
+      environmentVariables:
+        STELYRAAGENT_RELAY_BASE_URL: "$(STELYRAAGENT_SANDBOX_RELAY_BASE_URL)"
+    profile:
+      config: Debug
+    analyze:
+      config: Debug
+    archive:
+      config: Release

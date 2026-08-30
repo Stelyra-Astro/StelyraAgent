@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "locale": "de",
+  "bodies": {
+    "sun": "Sonne",
+    "moon": "Mond",
+    "mercury": "Merkur",
+    "venus": "Venus",
+    "mars": "Mars",
+    "jupiter": "Jupiter",
+    "saturn": "Saturn",
+    "uranus": "Uranus",
+    "neptune": "Neptun",
+    "pluto": "Pluto",
+    "trueNode": "Nordknoten", "lilith": "Lilith", "partOfFortune": "Glückspunkt", "juno": "Juno"
+  },
+  "zodiac": {
+    "aries": "Widder",
+    "taurus": "Stier",
+    "gemini": "Zwillinge",
+    "cancer": "Krebs",
+    "leo": "Löwe",
+    "virgo": "Jungfrau",
+    "libra": "Waage",
+    "scorpio": "Skorpion",
+    "sagittarius": "Schütze",
+    "capricorn": "Steinbock",
+    "aquarius": "Wassermann",
+    "pisces": "Fische"
+  },
+  "aspects": {
+    "conjunction": "Konjunktion",
+    "sextile": "Sextil",
+    "square": "Quadrat",
+    "trine": "Trigon",
+    "opposition": "Opposition"
+  },
+  "aspectPhases": {
+    "applying": "Sich nähernd",
+    "exact": "Exakt",
+    "separating": "Sich lösend"
+  },
+  "motions": {
+    "direct": "Direktläufig",
+    "retrograde": "Rückläufig",
+    "stationary": "Stationär"
+  },
+  "elements": {
+    "fire": "Feuer",
+    "earth": "Erde",
+    "air": "Luft",
+    "water": "Wasser"
+  },
+  "modalities": {
+    "cardinal": "Kardinal",
+    "fixed": "Fix",
+    "mutable": "Veränderlich"
+  },
+  "angles": {
+    "ascendant": "Aszendent",
+    "descendant": "Deszendent",
+    "midheaven": "Medium Coeli",
+    "imumCoeli": "Imum Coeli"
+  },
+  "moonPhases": {
+    "new-moon": "Neumond",
+    "waxing-crescent": "Zunehmende Sichel",
+    "first-quarter": "Erstes Viertel",
+    "waxing-gibbous": "Zunehmender Dreiviertelmond",
+    "full-moon": "Vollmond",
+    "waning-gibbous": "Abnehmender Dreiviertelmond",
+    "last-quarter": "Letztes Viertel",
+    "waning-crescent": "Abnehmende Sichel"
+  },
+  "chartKinds": {
+    "natal": "Radix",
+    "currentSky": "Aktueller Himmel",
+    "transit": "Transite",
+    "secondary": "Sekundärprogressionen",
+    "solarReturn": "Solar",
+    "synastry": "Synastrie"
+  },
+  "formats": {
+    "house": "Haus %d"
+  }
+}

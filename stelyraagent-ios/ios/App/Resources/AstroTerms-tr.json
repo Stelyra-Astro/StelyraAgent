@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "locale": "tr",
+  "bodies": {
+    "sun": "Güneş",
+    "moon": "Ay",
+    "mercury": "Merkür",
+    "venus": "Venüs",
+    "mars": "Mars",
+    "jupiter": "Jüpiter",
+    "saturn": "Satürn",
+    "uranus": "Uranüs",
+    "neptune": "Neptün",
+    "pluto": "Plüton",
+    "trueNode": "Kuzey Ay Düğümü", "lilith": "Lilith", "partOfFortune": "Şans Noktası", "juno": "Juno"
+  },
+  "zodiac": {
+    "aries": "Koç",
+    "taurus": "Boğa",
+    "gemini": "İkizler",
+    "cancer": "Yengeç",
+    "leo": "Aslan",
+    "virgo": "Başak",
+    "libra": "Terazi",
+    "scorpio": "Akrep",
+    "sagittarius": "Yay",
+    "capricorn": "Oğlak",
+    "aquarius": "Kova",
+    "pisces": "Balık"
+  },
+  "aspects": {
+    "conjunction": "Kavuşum",
+    "sextile": "Sekstil",
+    "square": "Kare",
+    "trine": "Üçgen",
+    "opposition": "Karşıt"
+  },
+  "aspectPhases": {
+    "applying": "Yaklaşan",
+    "exact": "Kesin",
+    "separating": "Ayrılan"
+  },
+  "motions": {
+    "direct": "Direkt",
+    "retrograde": "Retrograd",
+    "stationary": "Durağan"
+  },
+  "elements": {
+    "fire": "Ateş",
+    "earth": "Toprak",
+    "air": "Hava",
+    "water": "Su"
+  },
+  "modalities": {
+    "cardinal": "Öncü",
+    "fixed": "Sabit",
+    "mutable": "Değişken"
+  },
+  "angles": {
+    "ascendant": "Yükselen",
+    "descendant": "Alçalan",
+    "midheaven": "Tepe Noktası",
+    "imumCoeli": "Dip Noktası"
+  },
+  "moonPhases": {
+    "new-moon": "Yeni Ay",
+    "waxing-crescent": "Büyüyen Hilal",
+    "first-quarter": "İlkdördün",
+    "waxing-gibbous": "Büyüyen Şişkin Ay",
+    "full-moon": "Dolunay",
+    "waning-gibbous": "Küçülen Şişkin Ay",
+    "last-quarter": "Sondördün",
+    "waning-crescent": "Küçülen Hilal"
+  },
+  "chartKinds": {
+    "natal": "Doğum",
+    "currentSky": "Güncel Gökyüzü",
+    "transit": "Transitler",
+    "secondary": "İkincil İlerletimler",
+    "solarReturn": "Güneş Dönüşü",
+    "synastry": "Sinastri"
+  },
+  "formats": {
+    "house": "%d. Ev"
+  }
+}

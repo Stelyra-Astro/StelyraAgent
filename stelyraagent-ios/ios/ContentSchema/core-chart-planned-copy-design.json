@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Planned local-card copy/evidence contract for the four core techniques migrated in Stage 6. Runtime prose remains sourced from the reviewed private CopyCatalog; this public file defines selection intent, not consumer sentences.",
+  "presetPolicy": {
+    "modern": "Use the existing reviewed modern/shared CopyCatalog paths listed by each slot.",
+    "classical": "Use the same reviewed neutral/shared consumer copy until dedicated classical editorial paths are approved. Calculation facts remain Classical; no unreviewed classical prose is synthesized at runtime."
+  },
+  "techniques": {
+    "natal": {
+      "cards": [
+        {"cardID":"natal-interpretation","copySlot":"big-three-signature","evidence":["Sun placement","Moon placement","Ascendant sign"],"reviewedSources":["modern.natal.bigThree.<element>.<mode>"]},
+        {"cardID":"emotional-needs","copySlot":"moon-needs","evidence":["Moon sign/house"],"reviewedSources":["shared.natal.moonNeeds.<moonSign>"]},
+        {"cardID":"love-connection","copySlot":"venus-moon-needs","evidence":["Venus sign","Moon sign"],"reviewedSources":["shared.natal.loveElementMatrix.<venusElement>.<moonElement>","shared.natal.venusGives.<venusSign>"]},
+        {"cardID":"career-direction","copySlot":"mc-direction","evidence":["MC sign","MC ruler placement"],"reviewedSources":["shared.natal.mcDirection.<mcSign>"]},
+        {"cardID":"strengths-growth","copySlot":"aspect-strength-growth","evidence":["strongest supportive aspect","strongest challenging aspect"],"reviewedSources":["modern.natal.aspectCopy.<pair>.<tone>"]},
+        {"cardID":"element-balance","copySlot":"element-modality-balance","evidence":["planet element distribution","planet modality distribution"],"reviewedSources":["modern.natal.bigThree.<element>.<mode>"]},
+        {"cardID":"house-emphasis","copySlot":"house-emphasis","evidence":["ranked occupied/activated houses"],"reviewedSources":["shared.lifeAreas.<house>"]},
+        {"cardID":"chart-signature","copySlot":"chart-ruler-signature","evidence":["Ascendant ruler","dominant aspect bodies","element/modality orientation"],"reviewedSources":["modern.rulership.chartRulerCopy.<ruler>"]},
+        {"cardID":"planet-placements","copySlot":"placement-pair","evidence":["all enabled planet placements"],"reviewedSources":["modern.natal.placement.sun.<sunSign>","modern.natal.placement.moon.<moonSign>"]},
+        {"cardID":"key-aspects","copySlot":"key-aspect","evidence":["top ranked natal aspects"],"reviewedSources":["modern.natal.aspectCopy.<pair>.<tone>"]}
+      ]
+    },
+    "current-sky": {
+      "cards": [
+        {"cardID":"sky-overview","copySlot":"sky-atmosphere","evidence":["top sky aspects","Moon state"],"reviewedSources":["shared.currentSky.skyAtmosphere.<atmosphere>"]},
+        {"cardID":"moon-now","copySlot":"lunar-phase","evidence":["Sun longitude","Moon longitude/sign"],"reviewedSources":["shared.lunarPhase.<phase>"]},
+        {"cardID":"aspect-pattern","copySlot":"aspect-pattern","evidence":["top sky aspects"],"reviewedSources":["shared.currentSky.skyAtmosphere.<atmosphere>"]},
+        {"cardID":"planetary-motion","copySlot":"body-motion","evidence":["retrograde/direct motion"],"reviewedSources":["shared.bodyMotion.<body>.<state>"]},
+        {"cardID":"sign-changes","copySlot":"sign-style","evidence":["Moon sign","known sign-change events"],"reviewedSources":["shared.signStyle.<moonSign>"]},
+        {"cardID":"element-climate","copySlot":"sky-atmosphere","evidence":["current planet element distribution"],"reviewedSources":["shared.currentSky.skyAtmosphere.<atmosphere>"]},
+        {"cardID":"upcoming-7-days","copySlot":"sky-atmosphere","evidence":["upcoming sky events","top current aspects"],"reviewedSources":["shared.currentSky.skyAtmosphere.<atmosphere>"]}
+      ]
+    },
+    "secondary": {
+      "cards": [
+        {"cardID":"developmental-chapter","copySlot":"progressed-phase","evidence":["progressed Sun","progressed Moon","progressed lunar phase"],"reviewedSources":["shared.secondary.progressedPhase.<phase>"]},
+        {"cardID":"progressed-moon","copySlot":"progressed-moon-needs","evidence":["progressed Moon sign/house"],"reviewedSources":["shared.natal.moonNeeds.<moonSign>"]},
+        {"cardID":"identity-development","copySlot":"progressed-sun","evidence":["progressed Sun sign/house"],"reviewedSources":["modern.secondary.progressedSun.<sunSign>"]},
+        {"cardID":"turning-points","copySlot":"progressed-aspect","evidence":["top progressed-to-natal aspects"],"reviewedSources":["modern.natal.aspectCopy.<pair>.<tone>"]},
+        {"cardID":"areas-maturing","copySlot":"maturing-area","evidence":["ranked progressed placements in natal houses"],"reviewedSources":["shared.maturingArea.<house>"]},
+        {"cardID":"timeline","copySlot":"progressed-phase","evidence":["progressed phase","top progressed-to-natal aspects"],"reviewedSources":["shared.secondary.progressedPhase.<phase>"]}
+      ]
+    },
+    "solar-return": {
+      "cards": [
+        {"cardID":"year-theme","copySlot":"return-ascendant","evidence":["return Ascendant","return Sun"],"reviewedSources":["shared.solarReturn.solarAsc.<ascSign>"]},
+        {"cardID":"year-anchors","copySlot":"return-quarter","evidence":["return angles","chart ruler","return Sun"],"reviewedSources":["shared.solarReturn.solarQuarters.<quarter>"]},
+        {"cardID":"priority-areas","copySlot":"life-area","evidence":["ranked return houses"],"reviewedSources":["shared.lifeAreas.<house>"]},
+        {"cardID":"year-dynamics","copySlot":"return-aspect","evidence":["strongest supportive/challenging return aspects"],"reviewedSources":["modern.natal.aspectCopy.<pair>.<tone>"]},
+        {"cardID":"year-timeline","copySlot":"return-quarter","evidence":["solar-season/quarter events","fallback return aspects"],"reviewedSources":["shared.solarReturn.solarQuarters.<quarter>"]},
+        {"cardID":"natal-overlay","copySlot":"natal-angle-overlay","evidence":["return-to-natal angle contacts"],"reviewedSources":["shared.overlayAngles.<angle>"]},
+        {"cardID":"year-aspects","copySlot":"return-aspect","evidence":["top return-to-natal aspects"],"reviewedSources":["modern.natal.aspectCopy.<pair>.<tone>"]}
+      ]
+    }
+  }
+}
