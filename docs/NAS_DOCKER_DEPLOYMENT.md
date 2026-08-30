@@ -56,6 +56,11 @@ Runtime 的 SQLite 数据必须使用 Compose named volume 挂载到 `/data`。�
 
 其中填写 `DEEPSEEK_API_KEY`，需要时再填写 `OPENROUTER_API_KEY`。该文件永远不进入 Git、镜像包或部署报告。
 
+本次首次真机安装按用户指定顺序，在 Provider Key 填写前使用仓库内的
+`deploy/nas/runtime-prekey.env` 作为该 NAS `.env` 的临时模板。它明确使用
+`NODE_ENV=development`、关闭可用模型且不含任何 Provider/Apple Secret，只适用于
+局域网安装、启动和无 Key 错误路径验证；不得将该配置当作生产公网配置。
+
 ## 3. Mac/Colima 构建原则
 
 NAS 是 `amd64`，即使 Mac/Colima 是 Apple Silicon，也必须显式构建 `linux/amd64`。构建顺序固定为 Runtime 在前、Admin 在后。
@@ -202,6 +207,7 @@ Admin 热修复只替换 `stelyraagent-admin`；Runtime 热修复只替换 `stel
 部署前已确认 Docker 基础设施可用，但以下项目状态必须在实际执行时记录：
 
 - 真实 Runtime `.env` 尚未由用户填写 Provider Key。
+- 本次首轮可先使用 `deploy/nas/runtime-prekey.env` 完成局域网真机安装；这不是生产配置。
 - NAS 外部 HTTPS、反向代理和公网域名尚未确认，本手册只覆盖 LAN 部署。
 - Apple Sign in、App Store Server API、StoreKit/TestFlight 凭据尚未验证。
 - Provider smoke test 必须等用户填写 Key 后再执行。
