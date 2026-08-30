@@ -61,6 +61,11 @@ def test_project_has_independent_agent_runtime_configuration():
     assert "STELYRAAGENT_RUNTIME_BASE_URL" in project
     assert "INFOPLIST_KEY_CFBundleDisplayName: StelyraAgent" in project
 
+def test_runtime_base_url_is_exported_in_the_app_info_plist():
+    plist = text("Info.plist")
+    assert "<key>STELYRAAGENT_RUNTIME_BASE_URL</key>" in plist
+    assert "<string>$(STELYRAAGENT_RUNTIME_BASE_URL)</string>" in plist
+
 def test_agent_account_client_covers_apple_auth_session_account_and_iap_endpoints():
     source = text("Agent/AgentAPIClient.swift")
     for endpoint in [

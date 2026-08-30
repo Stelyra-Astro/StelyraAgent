@@ -4,6 +4,8 @@
 <dict>
 	<key>APP_ATTEST_ENVIRONMENT</key>
 	<string>$(APP_ATTEST_ENVIRONMENT)</string>
+	<key>STELYRAAGENT_RUNTIME_BASE_URL</key>
+	<string>$(STELYRAAGENT_RUNTIME_BASE_URL)</string>
 	<key>STELYRAAGENT_RELAY_BASE_URL</key>
 	<string>$(STELYRAAGENT_RELAY_BASE_URL)</string>
 </dict>
