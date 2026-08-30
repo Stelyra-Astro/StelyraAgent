@@ -5,6 +5,11 @@ import './styles.css';
 type Section = 'Dashboard' | 'Agent Runs' | 'IAP Transactions' | 'Models' | 'Provider Usage' | 'Runtime Config' | 'System Health';
 const sections: Section[] = ['Dashboard', 'Agent Runs', 'IAP Transactions', 'Models', 'Provider Usage', 'Runtime Config', 'System Health'];
 
+function defaultRuntimeBaseURL(): string {
+  const hostname = window.location.hostname;
+  return hostname ? `http://${hostname}:8787` : 'http://localhost:8787';
+}
+
 function formatNumber(value: number): string {
   return new Intl.NumberFormat('en-US', { maximumFractionDigits: 4 }).format(value);
 }
@@ -29,8 +34,8 @@ function DataTable({ rows }: { rows: Array<Record<string, unknown>> }) {
 export default function App() {
   const [section, setSection] = useState<Section>('Dashboard');
   const [credentials, setCredentials] = useState<AdminCredentials>(() => ({
-    baseURL: sessionStorage.getItem('astro-admin-base-url') ?? 'http://localhost:8787',
-    username: sessionStorage.getItem('astro-admin-username') ?? '',
+    baseURL: sessionStorage.getItem('stelyraagent-admin-base-url') ?? defaultRuntimeBaseURL(),
+    username: sessionStorage.getItem('stelyraagent-admin-username') ?? '',
     password: '',
   }));
   const [snapshot, setSnapshot] = useState<AdminSnapshot | null>(null);
@@ -44,8 +49,8 @@ export default function App() {
     try {
       const next = await loadAdminSnapshot(credentials);
       setSnapshot(next);
-      sessionStorage.setItem('astro-admin-base-url', credentials.baseURL);
-      sessionStorage.setItem('astro-admin-username', credentials.username);
+      sessionStorage.setItem('stelyraagent-admin-base-url', credentials.baseURL);
+      sessionStorage.setItem('stelyraagent-admin-username', credentials.username);
     } catch (err) {
       setSnapshot(null);
       setError(err instanceof Error ? err.message : 'Unable to connect');
