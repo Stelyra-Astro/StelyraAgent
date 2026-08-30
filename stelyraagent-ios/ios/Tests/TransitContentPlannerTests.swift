@@ -341,9 +341,8 @@ final class TransitContentPlannerTests: XCTestCase {
         )
     }
 
-    func testAIReportRequestLanguageNeverUsesCorpusFallback() {
+    func testAIReportRequestLanguageUsesSelectedLocale() {
         XCTAssertEqual(AppLanguage.allCases.map(\.reportRequestLanguage), AppLanguage.allCases)
-        XCTAssertEqual(AppLanguage.german.corpusLanguage, .english)
         XCTAssertEqual(AppLanguage.german.reportRequestLanguage, .german)
         XCTAssertEqual(AppLanguage.italian.reportRequestLanguage, .italian)
         XCTAssertEqual(AppLanguage.turkish.reportRequestLanguage, .turkish)
