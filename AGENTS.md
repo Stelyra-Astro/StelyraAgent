@@ -770,3 +770,5 @@ The real Provider keys are entered only after the complete iPhone 12 mini instal
 Do not commit, print, or package that file.
 
 For the pre-key LAN installation only, use the repository template `deploy/nas/runtime-prekey.env` as the NAS `.env`. It intentionally runs in development mode with all model policies disabled and contains no Provider or Apple secrets; replace it with a complete production configuration before any non-LAN exposure.
+
+The selected NAS LAN address for this deployment is `192.168.0.103`; use it for the iOS Debug Runtime URL and Admin origin.

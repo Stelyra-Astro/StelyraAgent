@@ -23,7 +23,7 @@
 | Docker root | `/share/CACHEDEV6_DATA/Container/container-station-data/lib/docker` |
 | 用户可用数据盘 | `/share/CACHEDEV4_DATA`，约 1003 GiB 可用 |
 | Docker CLI | `/share/CACHEDEV4_DATA/homes/xiaoguiwk/docker-cli` |
-| LAN 地址候选 | `192.168.0.103`（eth0）、`192.168.0.101`（br0） |
+| LAN 地址 | `192.168.0.103`（eth0；本次部署选定） |
 | StelyraAgent 端口 | 8787、8788 在探查时均未占用 |
 
 NAS 默认 SSH PATH 中没有 `docker`、`docker compose` 或 `docker-compose`，后续命令必须使用上表中的完整 CLI 路径，或在同一 SSH 命令中显式设置 PATH。
@@ -157,7 +157,7 @@ curl -fsS http://192.168.0.103:8787/health
 curl -fsS http://192.168.0.103:8788/
 ```
 
-如果 `192.168.0.103` 不可达，再使用 `192.168.0.101`。iOS Debug 的 Runtime URL 必须使用实际可达地址，不能使用手机上的 `127.0.0.1`。
+本次部署和 iOS Debug 统一使用 `192.168.0.103`；iOS Debug 的 Runtime URL 必须使用这个实际可达地址，不能使用手机上的 `127.0.0.1`。
 
 ## 5. 必做部署验证
 
